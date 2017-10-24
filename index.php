@@ -44,7 +44,16 @@
 		<meta property="og:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/imagen_kv_web.jpg">
 		<meta property="article:published_time" content="2017-10-23">
 		<meta property="article:author" content="http://cervezacorona.cl">      
-      
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108488388-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-108488388-1');
+		</script>     
       
     </head>
 
