@@ -35,13 +35,13 @@
 		<meta name="twitter:site" content="@cerveza_corona">
 		<meta name="twitter:title" content="Corona y Parley están buscando a 4 voluntarios.">
 		<meta name="twitter:description" content="Viaja a Islas Maldivas y descubre cómo puedes ayudar a combatir la contaminación de plásticos en nuestros océanos.">
-		<meta name="twitter:image" content="http://voluntariosporeloceano.cl/assets/img/imagen_kv_web.jpg">      
+		<meta name="twitter:image" content="http://voluntariosporeloceano.cl/assets/img/imagen_kv_web.jpg?v=2">      
 
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="Corona: Voluntarios por el Océano">
 		<meta property="og:site_name" content="Corona: Voluntarios por el Océano">
 		<meta property="og:url" content="http://voluntariosporeloceano.cl/">
-		<meta property="og:image" content="http://voluntariosporeloceano.cl/assets/img/imagen_kv_web.jpg">
+		<meta property="og:image" content="http://voluntariosporeloceano.cl/assets/img/imagen_kv_web.jpg?v=2">
 		<meta property="article:published_time" content="2017-10-23">
 		<meta property="article:author" content="http://cervezacorona.cl">      
 			
@@ -54,6 +54,25 @@
 			
 		</script>
 
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window,document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		 fbq('init', '534792470230801'); 
+		fbq('track', 'PageView');
+		</script>
+		<noscript>
+		 <img height="1" width="1" 
+		src="https://www.facebook.com/tr?id=534792470230801&ev=PageView
+		&noscript=1"/>
+		</noscript>
+		<!-- End Facebook Pixel Code -->
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108488388-1"></script>
