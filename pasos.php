@@ -14,7 +14,7 @@
 					<div class="row animated fadeInDown">
 						<div class="col s12 center-align">
 							<h2>¿QUIERES SER UNO DE LOS<br>VOLUNTARIOS POR EL OCÉANO?</h2>	
-							<a href="javascript:void(0);" class="btn waves-effect waves-light next" data-next="#paso1">Postula aquí</a>	
+							<a href="javascript:void(0);" class="btn waves-effect waves-light next" data-next="#paso1" onclick="dataLayer.push({'event': 'Postula Aquí'});">Postula aquí</a>	
 							<p class="limite">Fecha límite: 22 de noviembre 2017</p>	
 						</div>
 					</div>
@@ -31,7 +31,7 @@
 							</div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnForm">Buscar</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnForm" onclick="dataLayer.push({'event': 'Buscar'});">Buscar</button>
 								</div>
 							</div>
 						</form>
@@ -50,7 +50,7 @@
 							<p>2.- En la segunda etapa agendaremos una entrevista personal y los 10 mejores candidatos serán invitados a grabar un video, que será sometido a votación pública. Los 4 videos más votados, ganarán y viajarán a las Islas Maldivas a descubrir cómo cuidar nuestros océanos.</p>
 
 							<p>3.- A LA VUELTA DEL VIAJE LOS 4 VOLUNTARIOS ESTARÁN LISTOS PARA SER LOS AGENTES DE CAMBIO, Y JUNTO A CORONA (QUE REMUNERARÁ A LOS GANADORES), CONTRIBUIRÁN AL CUIDADO Y LIMPIEZA DE LAS COSTAS DE NUESTRO PAÍS.</p>
-							<a href="javascript:void(0);" class="btn waves-effect waves-light next">Siguiente</a>		
+							<a href="javascript:void(0);" class="btn waves-effect waves-light next" onclick="dataLayer.push({'event': 'Siguiente Paso 1'});">Siguiente</a>		
 						</div>
 					</div>
 		    	</div>
@@ -150,7 +150,7 @@
 							</div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnForm">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnForm" onclick="dataLayer.push({'event': 'Siguiente Paso 2'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -192,7 +192,7 @@
 							</div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP1">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP1" onclick="dataLayer.push({'event': 'Siguiente Paso 3'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -243,7 +243,7 @@
 							</div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP2">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP2" onclick="dataLayer.push({'event': 'Siguiente Paso 4'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -305,7 +305,7 @@
 							</div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP3">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP3" onclick="dataLayer.push({'event': 'Siguiente Paso 5'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -343,7 +343,7 @@
 							</div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP4">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP4" onclick="dataLayer.push({'event': 'Siguiente Paso 6'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -365,7 +365,7 @@
 							  </div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP5">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP5" onclick="dataLayer.push({'event': 'Siguiente Paso 7'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -420,7 +420,7 @@
 							</div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP5">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP5" onclick="dataLayer.push({'event': 'Siguiente Paso 8'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -442,7 +442,7 @@
 							  </div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP5">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP5" onclick="dataLayer.push({'event': 'Siguiente Paso 9'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -464,7 +464,7 @@
 							  </div>
 							<div class="row">
 								<div class="col s12 center-align">
-									<button class="btn waves-effect waves-light" type="submit" id="btnP5">Siguiente</button>
+									<button class="btn waves-effect waves-light" type="submit" id="btnP5" onclick="dataLayer.push({'event': 'Siguiente Paso 10'});">Siguiente</button>
 								</div>
 							</div>
 						</form>
@@ -484,16 +484,16 @@
 					</div>
 					 <div class="row">
 				        <div class="col s12 center-align">
-				          <a class="icon whatsapp" href="whatsapp://send?text=http://voluntariosporeloceano.cl/" data-action="share/whatsapp/share" >
+				          <a class="icon whatsapp" href="whatsapp://send?text=http://voluntariosporeloceano.cl/" data-action="share/whatsapp/share"  onclick="dataLayer.push({'event': 'Compartir Whatsapp'});">
 				            <i class="fa fa-whatsapp circle green"></i>
 				          </a>
 				
 				          
-					      <a class="icon share" href="javascript:void(0);" rel="nofollow" title="Click to share this post on Twitter" onclick="return tw_click();" >
+					      <a class="icon share" href="javascript:void(0);" rel="nofollow" title="Click to share this post on Twitter" onclick="return tw_click(); dataLayer.push({'event': 'Compartir Twitter'});" >
 				            <i class="fa fa-twitter circle blue"></i>
 				          </a>
 				
-				          <a class="icon share" href="javascript:void(0);" rel="nofollow" onclick="return fbs_click();" target="_blank" >
+				          <a class="icon share" href="javascript:void(0);" rel="nofollow" onclick="return fbs_click(); dataLayer.push({'event': 'Compartir Facebook'});" target="_blank" >
 				            <i class="fa fa-facebook circle blue darken-4"></i>
 				          </a>
 				        </div> <!-- /.col -->
@@ -509,7 +509,7 @@
 							uno de los 4 voluntarios del océano que será subido y<br>sometido a votación pública.</p>
 							<p>Mientras tanto, descubre cómo solucionar el<br>problema de nuestro océano en:</p>
 							<div id="botonfinal" class="valign-wrapper">							
-								<a href="http://coronaxparley.com/" class="btn waves-effect waves-light" target="_blank">coronaxparley.com</a>
+								<a href="http://coronaxparley.com/" class="btn waves-effect waves-light" target="_blank" dataLayer.push({'event': 'Corona x Parley'});>coronaxparley.com</a>
 							</div>
 						</div>
 					</div>
@@ -518,13 +518,13 @@
 
 					      <p>Comparte con tus amigos y sé parte del cambio<br>para proteger nuestros océanos.</p>  
 					        
-				          <a class="icon whatsapp" href="whatsapp://send?text=http://voluntariosporeloceano.cl/" data-action="share/whatsapp/share" >
+				          <a class="icon whatsapp" href="whatsapp://send?text=http://voluntariosporeloceano.cl/" data-action="share/whatsapp/share" onclick="dataLayer.push({'event': 'Compartir Whatsapp'});">
 				            <i class="fa fa-whatsapp circle green"></i>
 				          </a>
-					      <a class="icon share" href="javascript:void(0);" rel="nofollow" title="Compartir" onclick="return tw_click();" >
+					      <a class="icon share" href="javascript:void(0);" rel="nofollow" title="Compartir"  onclick="return tw_click(); dataLayer.push({'event': 'Compartir Twitter'});" target="_blank">
 				            <i class="fa fa-twitter circle blue"></i>
 				          </a>
-				          <a class="icon share" href="javascript:void(0);" rel="nofollow" onclick="return fbs_click();" target="_blank" >
+				          <a class="icon share" href="javascript:void(0);" rel="nofollow" onclick="return fbs_click(); dataLayer.push({'event': 'Compartir Facebook'});"  target="_blank" >
 				            <i class="fa fa-facebook circle blue darken-4"></i>
 				          </a>
 				        </div> <!-- /.col -->

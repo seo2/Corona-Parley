@@ -103,7 +103,7 @@ EN nuestros océanos</p>
 				</div>
 			</div>
 			
-			<a href="#profundidad" id="baja1" class="baja scroll" ><img src="assets/img/flecha-baja.png" class="responsive-img animated bounceInUp" data-scroll-speed="2"></a>
+			<a href="#profundidad" id="baja1" class="baja scroll" ><img src="assets/img/flecha-baja.png" class="responsive-img animated bounceInUp" data-scroll-speed="2" onclick="dataLayer.push({'event': 'Bajar'});"></a>
 			
 	    </section>
 	    

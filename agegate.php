@@ -86,7 +86,7 @@
 										</div>
 									</div>
 									<div class="col s6 offset-s3 m4 offset-m0">
-										<button class="btn waves-effect waves-light" type="submit" id="btnForm">Aceptar</button>
+										<button class="btn waves-effect waves-light" type="submit" id="btnForm" onclick="dataLayer.push({'event': 'Aceptar AgeGate'});">Aceptar</button>
 									</div>
 									
 								</form>
