@@ -1,5 +1,6 @@
 var	nombre, apellido, rut, edad, region, comuna, telefono, email, disponible, pasaporte, quiero, posID;
 
+
 paceOptions = {
       elements: false,
       selectors: '#profundidad'
@@ -230,6 +231,18 @@ $('#formDatos').on("submit", function(e) {
 				    Materialize.toast('Ha ocurrido un error, por favor vuelve a intentarlo.', 4000) // 4000 is the duration of the toast
 				  	$('#progreso').addClass('hide');
 				  	return;
+			    }else if(data=='existe'){
+				    posID = data;
+				    $('.posID').val(posID);			    
+				  	$('#btnEnviar').removeClass('hide');
+				  	$('#progreso').addClass('hide');
+				  	$('#paso2').hide();
+					$('#paso').removeClass('hide');
+					$('#paso span').hide();
+					$('#paso12').fadeIn();
+					$('html, body').animate({
+						scrollTop: $( '#paso' ).offset().top
+					}, 500);
 			    }else{	
 				    posID = data;
 				    $('.posID').val(posID);			    

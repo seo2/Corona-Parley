@@ -1,6 +1,17 @@
 html,body{width: 100%; height: 100%;}
 body{text-transform: uppercase;background: #003b66;}
 
+body.agegate{background: url(../img/bg-home.jpg?v=2) no-repeat center bottom;  background-size: cover;}
+#agegate{background: rgba(0,0,0,0.6); height: 100%;width: 100%; color: #fff;}
+#agegate h2{font-size: 30px; font-weight: normal; }
+#agegate img.logo{margin-top: 40px;}
+#cajafecha{border: 3px solid #fff;}
+#cajafecha input[type=text]:not(.browser-default),
+input[type=text]:not(.browser-default):focus:not([readonly]){ border: none; padding: 0; margin: 10px 0; text-align: center; height: 30px; border-radius: 0; -webkit-box-shadow: none; box-shadow: none }
+#agegate .btn { border: 3px solid #fff; color: #fff; background: transparent; border-radius: 0; height: auto; letter-spacing: 2px; height: 56px; line-height: 52px; width: 100%; padding: 0; }
+
+.diames{ border-right: 1px solid !important; margin-right: -1px !important;}
+
 #home{background: url(../img/bg-home.jpg?v=2) no-repeat center bottom; height: 100%; width: 100%; background-size: cover; padding-top: 20px; position: relative;color: #003b66;}
 #redes{position: absolute; right: 70px;top: 70px;}
 #nubes{position: absolute; width: 50%; top: 15%;z-index: 10;}
@@ -148,6 +159,10 @@ textarea.materialize-textarea { min-height: 20rem; }
 p.comparte{line-height: 160%; margin-top: 50px;}
 p.comparte span{color: #edc14a; font-weight: bolder;}
 
+#botonfinal{height: 170px; background: url(../img/bg-btnfinal.png) no-repeat center center; background-size: contain; margin-top: 40px;}
+#botonfinal .btn{margin: 0 auto;}
+
+
 footer{}
 footer h6{font-size: 18px;}
 footer h6 a:hover{text-decoration: underline;}
@@ -155,6 +170,14 @@ footer h5{font-size: 40px;}
 footer h5 a{margin: 0 10px;}
 footer h5 a:hover{opacity: 0.8;}
 .page-footer { background-color: #011824;}
+
+
+.faq #p1{padding-top: 50px; position: relative; background-size: contain;}
+.faq #p1 h1{font-weight: bolder; color: #edc14a; font-size: 40px; margin-bottom: 60px;}
+.faq #p1 h2{font-weight: normal; font-size: 20px;}
+.faq #p1 p{margin-bottom: 80px; line-height: 150%;}
+.faq #profundidad{height: auto;}
+.home #profundidad{height: auto;}
 
 @media only screen and (max-width: 1023px) {
 	#dos-tercios h2 { margin-left: -90px; }
