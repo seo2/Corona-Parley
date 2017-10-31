@@ -50,6 +50,7 @@ $db = new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
 									  <th>Pregunta 7</th>
 									  <th>Pregunta 8</th>
 									  <th>Compartido</th>
+									  <th>Fecha</th>
 								  </tr>
 							  </thead>   
 							  <tbody>
@@ -247,6 +248,7 @@ $db = new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
 									<td><?php echo $posP7; ?></td>
 									<td><?php echo $posP8; ?></td>
 									<td><?php echo $share; ?></td>
+									<td><?php echo $posTS; ?></td>
 								</tr>   
 								<?php  
 										}
