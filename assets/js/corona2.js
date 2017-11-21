@@ -730,7 +730,16 @@ function reiniciar(){
 							scrollTop: $( '#paso' ).offset().top
 						}, 500);
 						error = 0;
-				    }	    
+/*
+					    function() { 
+					      fbq('track', 'Registro Exitoso', {
+					        content_name: 'Se ha completado el formulario', 
+					        content_category: 'Formulario de Registro'
+					      });  
+					    }
+*/        
+				    }	
+				        
 			    }   
 	    	}
 	    });	 
@@ -764,3 +773,4 @@ function reiniciar(){
 		
 	});
 });
+

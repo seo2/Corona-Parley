@@ -24,12 +24,14 @@
 		<meta name="author" content="Cerveza Corona">
 		<script src="https://use.fontawesome.com/3dcd2ef12b.js"></script>
 		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+<!--
 		<script src="assets/js/pace.js"></script>
 		<link href="assets/css/pace-theme-big-counter.css" rel="stylesheet" />
+-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=1.7"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=1.8"  media="screen,projection"/>
       
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@cerveza_corona">
@@ -416,7 +418,7 @@ EN nuestros océanos</p>
 		    	<img src="assets/img/mancha-1.png" class="responsive-img">
 		    </div>		
 			<div id="p6">
-				<?php include('pasos.php'); ?>
+				<?php include('etapa2.php'); ?>
 		    </div>		    
 	    </section>	    
 	    
@@ -444,7 +446,7 @@ EN nuestros océanos</p>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="assets/js/materialize.min.js"></script>     
       <script type="text/javascript" src="assets/js/jquery.rut.min.js"></script>
-      <script type="text/javascript" src="assets/js/corona2.js?v=1.5"></script>
+      <script type="text/javascript" src="assets/js/corona2.js?v=1.6"></script>
     </body>
   </html>
         
