@@ -4,10 +4,10 @@
 		    	
 		    	<div class="container" id="etapa2">
 					<div class="row">
-						<div class="col s4 offset-s2 center-align">
+						<div class="col s6 m4 offset-m2 center-align">
 							<h2>¡ya casi!</h2>
 						</div>
-						<div class="col s4 left-align">
+						<div class="col s6 m4 left-align">
 							<p>
 								Para no dejar el futuro de<br>
 								nuestros océanos al azar,<br>

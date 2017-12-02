@@ -120,7 +120,8 @@ function reiniciar(){
 				$('#l5').removeClass('hide');
 			}
 			if(scroll>=2700){
-				$('#paso0').removeClass('hide');
+// 				$('#paso0').removeClass('hide');
+				$('#etapa3a').removeClass('hide');
 			}
 		}else{
 			if(scroll>=1470){
@@ -146,7 +147,8 @@ function reiniciar(){
 				$('#l5').removeClass('hide');
 			}
 			if(scroll>=3600){
-				$('#paso0').removeClass('hide');
+// 				$('#paso0').removeClass('hide');
+				$('#etapa3a').removeClass('hide');
 			}
 		}	
 	});
@@ -770,7 +772,33 @@ function reiniciar(){
 		$('#paso span').html(etapa+'/12');
 		reiniciar();
 		
-		
 	});
 });
 
+$('.votar').on('click',function(){
+	
+	uid			= $(this).data('uid');
+	voto		= $(this).data('voto');
+	$.ajax({
+    	url:  'ajax/graba_voto.php',
+		type: "POST",
+        data: {'oauth_uid':uid, 'voto': voto},
+        success: function(data) {		   
+		    console.log(data);  
+		    if(data=='1'){
+			    Materialize.toast('Tu voto ha sido registrado.', 4000) // 4000 is the duration of the toast
+				error = 0;
+			  	return;
+		    }else if(data=="2"){	
+			    Materialize.toast('Ya has votado por este video.', 4000) // 4000 is the duration of the toast
+				error = 0;
+			  	return;
+		    }else{
+			    Materialize.toast('Ha ocurrido un error, por favor vuelve a intentarlo.', 4000) // 4000 is the duration of the toast
+				error = 0;
+			  	return;
+		    }   
+    	}
+    });	
+	
+});
