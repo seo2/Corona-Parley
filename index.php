@@ -129,7 +129,7 @@ if(isset($accessToken)){
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=1.8"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=2"  media="screen,projection"/>
       
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@cerveza_corona">
@@ -545,6 +545,28 @@ EN nuestros océanos</p>
       <script type="text/javascript" src="assets/js/materialize.min.js"></script>     
       <script type="text/javascript" src="assets/js/jquery.rut.min.js"></script>
       <script type="text/javascript" src="assets/js/corona2.js?v=1.6"></script>
+<?php 
+	if($conectado==1){ 
+?>	
+	<script>
+		$('.p2').removeClass('hide');
+		$('#l2').removeClass('hide');
+		$('#dos-tercios').removeClass('hide');
+		$('#l3').removeClass('hide');
+		$('#toneladas').removeClass('hide');
+		$('#l4').removeClass('hide');
+		$('#coronaseune').removeClass('hide');
+		$('#l5').removeClass('hide');
+		$('#etapa3a').removeClass('hide');
+		$('html,body').animate({
+			scrollTop: $("#etapa3a").offset().top},
+		'slow');
+	</script>
+<?php 		
+	}	
+ ?>
+      
+      
     </body>
   </html>
         

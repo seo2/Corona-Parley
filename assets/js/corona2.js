@@ -775,10 +775,13 @@ function reiniciar(){
 	});
 });
 
-$('.votar').on('click',function(){
+$('a.votar').on('click',function(){
 	
 	uid			= $(this).data('uid');
 	voto		= $(this).data('voto');
+	voton		= $(this).attr('id');
+	votos		= $('#votos'+voto+' span').html();
+	
 	$.ajax({
     	url:  'ajax/graba_voto.php',
 		type: "POST",
@@ -788,17 +791,21 @@ $('.votar').on('click',function(){
 		    if(data=='1'){
 			    Materialize.toast('Tu voto ha sido registrado.', 4000) // 4000 is the duration of the toast
 				error = 0;
+				$('.caja_voton').html('<a href="javascript:void(0);" class="btn waves-effect waves-light disabled" target="_blank" dataLayer.push({"event": "Votar"});>Ya votaste</a>');
+				votos = parseInt(votos) + 1;
+				$('#votos'+voto+' span').html(votos);
 			  	return;
 		    }else if(data=="2"){	
 			    Materialize.toast('Ya has votado por este video.', 4000) // 4000 is the duration of the toast
-				error = 0;
+				error = 1;
 			  	return;
 		    }else{
-			    Materialize.toast('Ha ocurrido un error, por favor vuelve a intentarlo.', 4000) // 4000 is the duration of the toast
-				error = 0;
+			    Materialize.toast('Ha ocurrido un error, por favor vuelve a intentarlo. 11', 4000) // 4000 is the duration of the toast
+				error = 1;
 			  	return;
 		    }   
     	}
     });	
+
 	
 });

@@ -14,15 +14,15 @@ use Facebook\Exceptions\FacebookSDKException;
 /*
  * Configuration and setup Facebook SDK
  */
-$appId         = '903229586495647'; //Facebook App ID
-$appSecret     = 'e8fc1d79d7a5ac30eb40e800c49c496d'; //Facebook App Secret
-$redirectURL   = 'https://s219687.gridserver.com/clientes/modo/corona/parley/'; //Callback URL
+$appId         = '1293264434152970'; //Facebook App ID
+$appSecret     = '812833acbb8671aa037f45f864f861ed'; //Facebook App Secret
+$redirectURL   = 'https://s219687.gridserver.com/clientes/modo/corona/parley/?redirect=1'; //Callback URL
 $fbPermissions = array('email');  //Optional permissions
 
 $fb = new Facebook(array(
     'app_id' 				=> $appId,
     'app_secret' 			=> $appSecret,
-    'default_graph_version' => 'v2.2',
+    'default_graph_version' => 'v2.11',
 ));
 
 // Get redirect login helper
