@@ -42,8 +42,9 @@ if($_SESSION['ccid']){
 				<div class="sidebar-menu">	
 					<ul class="nav nav-sidebar">
 
-						<li><a href="index.php"><i class="icon-speedometer"></i><span class="text"> Postulantes</span></a></li>
-						<li><a href="excel.php"><i class="icon-cloud-download"></i><span class="text"> Descargar</span></a></li>
+						<li><a href="index.php"><i class="icon-speedometer"></i><span class="text"> Votación</span></a></li>
+						<li><a href="postulantes.php"><i class="icon-users"></i><span class="text"> Postulantes</span></a></li>
+						<li><a href="exportar.php"><i class="icon-cloud-download"></i><span class="text"> Descargar</span></a></li>
 
 						<li><a href="javascript:void(0);" id="logoutBtn"><i class="icon-logout"></i><span class="text"> Salir</span></a></li>
 

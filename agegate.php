@@ -17,32 +17,35 @@
 	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
       
-		<title>Corona: Voluntarios por el Océano</title>
-		<meta name="description" content="Viaja a Islas Maldivas y descubre cómo puedes ayudar a combatir la contaminación de plásticos en nuestros océanos.">
+      <title>Corona: Voluntarios por el Océano</title>
+ 
+      	<meta name="description" content="Súmate a los voluntarios por el océano y limpiemos las playas de Chile.">
 		<meta name="robots" content="index, nofollow">
 		<meta name="author" content="Cerveza Corona">
 		<script src="https://use.fontawesome.com/3dcd2ef12b.js"></script>
 		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+<!--
 		<script src="assets/js/pace.js"></script>
 		<link href="assets/css/pace-theme-big-counter.css" rel="stylesheet" />
+-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=1.7"  media="screen,projection"/>
-		
+		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=2.1"  media="screen,projection"/>
+      
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@cerveza_corona">
 		<meta name="twitter:title" content="Corona y Parley están buscando a 4 voluntarios.">
-		<meta name="twitter:description" content="Viaja a Islas Maldivas y descubre cómo puedes ayudar a combatir la contaminación de plásticos en nuestros océanos.">
-		<meta name="twitter:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/imagen_kv_web.jpg">      
-		
+		<meta name="twitter:description" content="Súmate a los voluntarios por el océano y limpiemos las playas de Chile.">
+		<meta name="twitter:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">      
+
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="Corona: Voluntarios por el Océano">
 		<meta property="og:site_name" content="Corona: Voluntarios por el Océano">
 		<meta property="og:url" content="https://s219687.gridserver.com/clientes/modo/corona/parley/">
-		<meta property="og:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/imagen_kv_web.jpg">
+		<meta property="og:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">
 		<meta property="article:published_time" content="2017-10-23">
-		<meta property="article:author" content="http://cervezacorona.cl">      
+		<meta property="article:author" content="http://cervezacorona.cl">        
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108488388-1"></script>
@@ -68,7 +71,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row center-align">
+				<div class="row center-align" style="margin-bottom:0">
 					<div class="col s12">
 						<div class="row" style="margin-bottom: 0;">
 							<div class="col s12">

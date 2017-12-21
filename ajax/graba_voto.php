@@ -18,17 +18,28 @@ if ($ajax) {
 		}
 	}  
 	if($yavote==0){
-		date_default_timezone_set('America/Santiago');
-		$ahora 	= date("Y-m-d H:i:s");	
-		
-		$data = Array (
-			"oauth_uid" => $oauth_uid,
-			"voto" 		=> $voto,
-			"TS"		=> $ahora
-		);
-		
-		$id = $db->insert ('votos', $data);	
-		echo '1';
+		$exite = 0;
+		$resultado = $db->rawQuery('select * from users where oauth_uid = '.$oauth_uid);
+		if($resultado){
+			foreach ($resultado as $r) {
+				$exite = 1;
+			}
+		}  
+		if($exite == 1){
+			date_default_timezone_set('America/Santiago');
+			$ahora 	= date("Y-m-d H:i:s");	
+			
+			$data = Array (
+				"oauth_uid" => $oauth_uid,
+				"voto" 		=> $voto,
+				"TS"		=> $ahora
+			);
+			
+			$id = $db->insert ('votos', $data);	
+			echo '1';
+		}else{
+			echo 'error';
+		}
 	}else{
 		echo '2';
 	}

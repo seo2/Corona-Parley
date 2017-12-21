@@ -90,72 +90,76 @@ function reiniciar(){
 	$('.materialize-textarea').characterCounter();
 	
 	var ancho = $(window).width();
-	console.log(ancho);
+//	console.log(ancho);
 	
 	$(window).scroll(function (event) {
 		var scroll = $(window).scrollTop();
 		console.log(scroll);
 		
 		if(ancho < 768){
-			if(scroll>=800){
+			if(scroll>=200){
 				$('.p2').removeClass('hide');
 			}
-			if(scroll>=1100){
+			if(scroll>=500){
 				$('#l2').removeClass('hide');
 			}
-			if(scroll>=1500){
+			if(scroll>=900){
 				$('#dos-tercios').removeClass('hide');
 				$('#l3').removeClass('hide');
 			}
-			if(scroll>=1750){
+			if(scroll>=1150){
 				$('#toneladas').removeClass('hide');
+			}
+			if(scroll>=1400){
+				$('#l4').removeClass('hide');
+			}
+			if(scroll>=1650){
+				$('#coronaseune').removeClass('hide');
 			}
 			if(scroll>=2000){
-				$('#l4').removeClass('hide');
-			}
-			if(scroll>=2250){
-				$('#coronaseune').removeClass('hide');
-			}
-			if(scroll>=2600){
 				$('#l5').removeClass('hide');
 			}
-			if(scroll>=2700){
-// 				$('#paso0').removeClass('hide');
-				$('#etapa3a').removeClass('hide');
+			if(scroll>=2100){
+				$('#voluntarios').removeClass('hide');
+			}
+			if(scroll>=2400){
+				$('#verano').removeClass('hide');
 			}
 		}else{
-			if(scroll>=1470){
+			if(scroll>=270){
 				$('.p2').removeClass('hide');
 			}
-			if(scroll>=1840){
+			if(scroll>=640){
 				$('#l2').removeClass('hide');
 			}
-			if(scroll>=2100){
+			if(scroll>=900){
 				$('#dos-tercios').removeClass('hide');
 				$('#l3').removeClass('hide');
 			}
-			if(scroll>=2500){
+			if(scroll>=1300){
 				$('#toneladas').removeClass('hide');
 			}
-			if(scroll>=2700){
+			if(scroll>=1500){
 				$('#l4').removeClass('hide');
 			}
-			if(scroll>=2900){
+			if(scroll>=1700){
 				$('#coronaseune').removeClass('hide');
 			}
-			if(scroll>=3500){
+			if(scroll>=2300){
 				$('#l5').removeClass('hide');
 			}
-			if(scroll>=3600){
-// 				$('#paso0').removeClass('hide');
-				$('#etapa3a').removeClass('hide');
+			if(scroll>=3000){
+				$('#voluntarios').removeClass('hide');
+			}
+			if(scroll>=3400){
+				$('#verano').removeClass('hide');
 			}
 		}	
 	});
 	
 	
-	var error = 0;
 	
+/*
 	$('#formDatos').on("submit", function(e) {
 	  	e.preventDefault();
 	  
@@ -282,6 +286,7 @@ function reiniciar(){
 		}
 	});
 	
+*/
 	    
 	$("#rut, #elrut")
 	  .rut({formatOn: 'keyup', validateOn: 'keyup'})
@@ -296,9 +301,11 @@ function reiniciar(){
 	    error = 0;
 	  });
 	  
+/*
 	$("#region").bind("change", function() {
 	    GetComunas($(this).val());
 	});	
+*/
 	
 	function GetComunas(regionID) {
 	  if (regionID > 0) {
@@ -375,6 +382,7 @@ function reiniciar(){
 		  	return;
 		}
 	}); 
+	
 	
 	$('#formP2').on("submit", function(e) {
 	  	e.preventDefault();
@@ -751,9 +759,9 @@ function reiniciar(){
 	
 }
 
-	function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u=http://voluntariosporeloceano.cl/&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}
+	function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u=https://s219687.gridserver.com/clientes/modo/corona/parley/&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}
 	
-	function tw_click() {u=location.href;t=document.title;window.open('https://twitter.com/intent/tweet?text=http://voluntariosporeloceano.cl/&hashtags=VoluntariosPorElOceano','sharer','toolbar=0,status=0,width=626,height=436');return false;}
+	function tw_click() {u=location.href;t=document.title;window.open('https://twitter.com/intent/tweet?text=https://s219687.gridserver.com/clientes/modo/corona/parley/&hashtags=VoluntariosPorElOceano','sharer','toolbar=0,status=0,width=626,height=436');return false;}
 
  reiniciar();
  
@@ -791,7 +799,7 @@ $('a.votar').on('click',function(){
 		    if(data=='1'){
 			    Materialize.toast('Tu voto ha sido registrado.', 4000) // 4000 is the duration of the toast
 				error = 0;
-				$('.caja_voton').html('<a href="javascript:void(0);" class="btn waves-effect waves-light disabled" target="_blank" dataLayer.push({"event": "Votar"});>Ya votaste</a>');
+				$('#caja_voton'+voto).html('<a href="javascript:void(0);" class="btn waves-effect waves-light disabled" target="_blank" dataLayer.push({"event": "Votar"});>Ya votaste</a>');
 				votos = parseInt(votos) + 1;
 				$('#votos'+voto+' span').html(votos);
 			  	return;
@@ -808,4 +816,291 @@ $('a.votar').on('click',function(){
     });	
 
 	
+});
+
+
+$('a.mapa-link').on('click',function(){
+	$('#mapa').addClass('hide');
+	elid	= $(this).attr('id');
+	$('#mapa-'+elid).removeClass('hide');
+	$('html, body').animate({
+			scrollTop: $( '#verano' ).offset().top
+		}, 500);
+	$('.mapa-info button').prop('disabled', true);
+		
+	if(elid=="arica"){
+		playa = "Arica";
+	}else if(elid=="iquique"){
+		playa = "Iquique";
+	}else if(elid=="antofagasta"){
+		playa = "Antofagasta";
+	}else if(elid=="caldera"){
+		playa = "Caldera";
+	}else if(elid=="bahia-inglesa"){
+		playa = "Bahía Inglesa";
+	}else if(elid=="totoralillo"){
+		playa = "Totoralillo";
+	}else if(elid=="quintero"){
+		playa = "Quintero";
+	}else if(elid=="guanaqueros"){
+		playa = "Guanaqueros";
+	}else if(elid=="maitencillo"){
+		playa = "Maitencillo";
+	}else if(elid=="pichilemu"){
+		playa = "Pichilemu";
+	}else if(elid=="puertecillo"){
+		playa = "Puertecillo";
+	}else if(elid=="valdivia"){
+		playa = "Valdivia";
+	}else if(elid=="cobquecura"){
+		playa = "Cobquecura";
+	}else if(elid=="chiloe"){		
+		playa = "Chiloé";
+	}else if(elid=="curanipe"){		
+		playa = "Curanipe";
+	}		
+		
+       console.log(playa);
+  	$('#playa').val(playa);
+  	$('#laplaya').html(playa);
+});
+
+$('a.mapa-volver').on('click',function(){
+	$('.mapa-info').addClass('hide');
+	$('#mapa-listo').addClass('hide');
+	$('#mapa').removeClass('hide');
+	$('html, body').animate({
+			scrollTop: $( '#verano' ).offset().top
+		}, 500);
+  	$('#laplaya').html('');
+	$('#eldia').html('');
+ 	$('.mapa-footer form')[0].reset();
+ 	$('.radios').prop('checked', false);
+});
+
+$('.mapa-footer input').on('change', function(evt) {
+   if($('.mapa-footer input').is(':checked')) {
+       fecha = $(this).val();
+       console.log(fecha);
+       $('#fecha').val(fecha);
+	   $('#eldia').html(fecha);
+       $('.mapa-info button').prop('disabled', false);
+       
+   }
+});
+
+$('.mapa-info button').on('click',function(){
+	$('.mapa-info').addClass('hide');
+	$('#mapa-form').removeClass('hide');
+	$('html, body').animate({
+		scrollTop: $( '#verano' ).offset().top
+	}, 500);
+ 	$('.radios').prop('checked', false);
+});
+
+$('#btnBack').on('click',function(){
+	$('#mapa-form').addClass('hide');
+	$('#mapa').removeClass('hide');
+// 	$('#formVerano')[0].reset();
+	$('html, body').animate({
+			scrollTop: $( '#verano' ).offset().top
+		}, 500);
+  	$('#laplaya').html('');
+	$('#eldia').html('');
+ 	$('.mapa-footer form')[0].reset();
+ 	$('.radios').prop('checked', false);
+});
+
+	var error = 0;	
+$('#formVerano').on("submit", function(e) {
+	  	e.preventDefault();
+	  
+		$('#progreso').removeClass('hide');
+		
+	  	nombre 			= $('#nombre').val();
+	  	apellido 		= $('#apellido').val();
+	  	rut 			= $('#rut').val();
+	  	region 			= $('#region').val();
+	  	telefono 		= $('#telefono').val();
+	  	email 			= $('#email').val();
+	  	nombreamigo 	= $('#nombreamigo').val();
+	  	telefonoamigo 	= $('#telefonoamigo').val();
+	  	emailamigo 		= $('#emailamigo').val();
+	
+		if(nombre==''){
+			Materialize.toast('Debes ingresar el nombre', 4000);
+			$('#nombre').addClass('invalid');
+			error = 1;
+		}
+	
+		if(apellido==''){
+			Materialize.toast('Debes ingresar el apellido', 4000);
+			$('#apellido').addClass('invalid');
+			error = 1;
+		}	
+	
+		if(rut==''){
+			Materialize.toast('Debes ingresar el RUT', 4000);
+			$('#rut').addClass('invalid');
+			error = 1;
+		}	
+	
+		if(region==''){
+			Materialize.toast('Debes seleccionar la región', 4000);
+			$('#region').parent().addClass('invalid');
+			error = 1;
+		}
+	
+		if(telefono==''){
+			Materialize.toast('Debes ingresar el teléfono', 4000);
+			$('#telefono').addClass('invalid');
+			error = 1;
+		}
+	
+		if(email==''){
+			Materialize.toast('Debes ingresar el email', 4000);
+			$('#email').addClass('invalid');
+			error = 1;
+		}
+		
+
+	
+		if(nombreamigo!=''){
+			if(telefonoamigo==''){
+				Materialize.toast('Debes ingresar el teléfono de tu amigo', 4000);
+				$('#telefonoamigo').addClass('invalid');
+				error = 1;
+			}
+		
+			if(emailamigo==''){
+				Materialize.toast('Debes ingresar el email de tu amigo', 4000);
+				$('#emailamigo').addClass('invalid');
+				error = 1;
+			}
+		}		
+		
+	  
+		if($('#rut').hasClass('invalid')){
+			Materialize.toast('RUT invalido', 4000);
+			$('#rut').addClass('invalid');
+			error = 1;
+		}
+	  
+	  
+	  	if(error==0){  
+		    $.ajax({
+		    	url:  $('#formVerano').attr('action'),
+				type: "POST",
+	            data: $('#formVerano').serialize(),
+	            success: function(data) {		   
+				    console.log(data);  
+					error = 0;
+				    if(data=='error'){
+					    Materialize.toast('Ha ocurrido un error, por favor vuelve a intentarlo.', 4000) // 4000 is the duration of the toast
+					  	$('#progreso').addClass('hide');
+					  	return;
+				    }else if(data=='existe'){	    
+					  	$('#btnEnviar').removeClass('hide');
+					  	$('#progreso').addClass('hide');
+						$('html, body').animate({
+							scrollTop: $( '#verano' ).offset().top
+						}, 500);
+						$('#mapa-form').addClass('hide');
+						$('#mapa-listo').removeClass('hide');
+				    }else{	
+					    posID = data;		    
+					  	$('#btnEnviar').removeClass('hide');
+					  	$('#progreso').addClass('hide');
+					  	$('#formVerano')[0].reset();
+						$('html, body').animate({
+							scrollTop: $( '#verano' ).offset().top
+						}, 500);
+						$('#mapa-form').addClass('hide');
+						$('#mapa-listo').removeClass('hide');
+		
+				    }   
+				    
+		    	}
+		    });	  	
+	  	}else{ 	
+		  	$('#progreso').addClass('hide');
+			Materialize.toast('Debes completar el formulario', 4000);
+			error = 0;
+		  	return;
+		}
+	});
+	
+// The resize function
+function resize() {
+  var vheight = $(window).height();
+  var vwidth = $(window).width();
+  $('.fullsize-background').css({
+    'height': vheight,
+    'width': vwidth 
+  });
+};
+
+// The scroll-up function
+function scrollUp() {
+  var vheight = $(window).height();
+  $('html, body').animate({
+    scrollTop: (Math.ceil($(window).scrollTop() / vheight)-1) * vheight
+  }, 500);
+};
+
+// The scroll-down function
+function scrollDown() {
+  var vheight = $(window).height();
+  $('html, body').animate({
+    scrollTop: (Math.floor($(window).scrollTop() / vheight)+1) * vheight
+  }, 500);  
+};
+
+// Do stuff when document is ready
+$(document).ready(function(){
+  
+  // Resize Container Function
+  resize();
+  
+  // Click to Scroll DOWN Functions
+  $('.baja').click(function(event){
+    scrollDown();
+    event.preventDefault();
+  });
+  
+  // Click to Scroll UP Functions
+  $('.scroll-prev').click(function(event){
+    scrollUp();
+    event.preventDefault();
+  });
+  
+});
+
+// Key Events
+$(document).keydown(function(e) {
+ if (e.keyCode == 40) { scrollDown(); };
+ if (e.keyCode == 34) { scrollDown(); };
+ if (e.keyCode == 33) { scrollUp(); };
+ if (e.keyCode == 38) { scrollUp(); };
+  e.preventDefault;
+});
+
+/*
+// Mousewheel events
+$(window).bind('mousewheel', function(event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+        scrollDown();
+    }
+    else {
+        scrollUp();
+    }
+    event.preventDefault;
+});
+*/
+
+// Resize Container on window resize
+$(window).resize(function(){
+  
+  resize();
+  
 });

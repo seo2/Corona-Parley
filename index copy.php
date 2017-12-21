@@ -1,4 +1,102 @@
 <?php
+// Include FB config file && User class
+require_once 'fbConfig.php';
+require_once 'user.php';
+
+$conectado = 0;
+
+if(isset($accessToken)){
+    if(isset($_SESSION['facebook_access_token'])){
+        $fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
+    }else{
+        // Put short-lived access token in session
+        $_SESSION['facebook_access_token'] = (string) $accessToken;
+        
+          // OAuth 2.0 client handler helps to manage access tokens
+        $oAuth2Client = $fb->getOAuth2Client();
+        
+        // Exchanges a short-lived access token for a long-lived one
+        $longLivedAccessToken = $oAuth2Client->getLongLivedAccessToken($_SESSION['facebook_access_token']);
+        $_SESSION['facebook_access_token'] = (string) $longLivedAccessToken;
+        
+        // Set default access token to be used in script
+        $fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
+    }
+    
+    // Redirect the user back to the same page if url has "code" parameter in query string
+    if(isset($_GET['code'])){
+        header('Location: ./');
+    }
+    
+    // Getting user facebook profile info
+    try {
+        $profileRequest = $fb->get('/me?fields=name,first_name,last_name,email,link,gender,locale,picture');
+        $fbUserProfile = $profileRequest->getGraphNode()->asArray();
+    } catch(FacebookResponseException $e) {
+        echo 'Graph returned an error: ' . $e->getMessage();
+        session_destroy();
+        // Redirect user back to app login page
+        header("Location: ./");
+        exit;
+    } catch(FacebookSDKException $e) {
+        echo 'Facebook SDK returned an error: ' . $e->getMessage();
+        exit;
+    }
+    
+    // Initialize User class
+    $user = new User();
+    
+    // Insert or update user data to the database
+    $fbUserData = array(
+        'oauth_provider'=> 'facebook',
+        'oauth_uid'     => $fbUserProfile['id'],
+        'first_name'    => $fbUserProfile['first_name'],
+        'last_name'     => $fbUserProfile['last_name'],
+        'email'         => $fbUserProfile['email'],
+        'gender'        => $fbUserProfile['gender'],
+        'locale'        => $fbUserProfile['locale'],
+        'picture'       => $fbUserProfile['picture']['url'],
+        'link'          => $fbUserProfile['link']
+    );
+    $userData = $user->checkUser($fbUserData);
+    
+    // Put user data into session
+    $_SESSION['userData'] = $userData;
+    
+    // Get logout url
+    $logoutURL = $helper->getLogoutUrl($accessToken, $redirectURL.'logout.php');
+    
+    // Render facebook profile data
+    if(!empty($userData)){
+/*
+        $output  = '<h1>Facebook Profile Details </h1>';
+        $output .= '<img src="'.$userData['picture'].'">';
+        $output .= '<br/>Facebook ID : ' . $userData['oauth_uid'];
+        $output .= '<br/>Name : ' . $userData['first_name'].' '.$userData['last_name'];
+        $output .= '<br/>Email : ' . $userData['email'];
+        $output .= '<br/>Gender : ' . $userData['gender'];
+        $output .= '<br/>Locale : ' . $userData['locale'];
+        $output .= '<br/>Logged in with : Facebook';
+        $output .= '<br/><a href="'.$userData['link'].'" target="_blank">Click to Visit Facebook Page</a>';
+        $output .= '<br/>Logout from <a href="'.$logoutURL.'">Facebook</a>'; 
+*/
+		$conectado = 1;
+
+    }else{
+/*         $output = '<h3 style="color:red">Some problem occurred, please try again.</h3>'; */
+       
+
+    }
+    
+}else{
+    // Get login url
+    $loginURL = $helper->getLoginUrl($redirectURL, $fbPermissions);
+    
+    // Render facebook login button
+    $output = '<a href="'.htmlspecialchars($loginURL).'" class="btn btn-primary btn-azul" href="#" role="button">inicia con facebook</a>';
+}
+?>
+<?php
 	require_once("ajax/_lib/config.php");
 	require_once("ajax/_lib/MysqliDb.php");
 	$db = new MysqliDb (DBHOST, DBUSER, DBPASS, DBNAME);
@@ -89,17 +187,11 @@
     </head>
 
     <body class="home">
-			
-		<a href="javascript:void(0);" id="baja1" class="baja" ><img src="assets/img/flecha-baja.png" class="responsive-img animated bounceInUp" onclick="dataLayer.push({'event': 'Bajar'});"></a>
 	    
 	    <section id="home" class="hide">
-		     <div id="redes" data-scroll-speed="8">
-		    	<p class="center-align animated fadeIn">
-	                <a href="https://www.instagram.com/cerveza_corona/" target="_blank" class=""><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-			    	<a href="https://www.facebook.com/cervezacoronachileoficial" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
-			    	<a href="https://twitter.com/cerveza_corona?lang=es" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a href="https://www.youtube.com/user/CervezaCoronaChile" target="_blank" class=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>			    
-			    </p>
+<!-- 		    <img src="assets/img/nubes.png" id="nubes" class="animated fadeInLeft" > -->
+		    <div id="redes" data-scroll-speed="8">
+		    	<p class="center-align animated fadeIn"><a href="https://www.facebook.com/cervezacoronachileoficial" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> <a href="https://twitter.com/cerveza_corona?lang=es" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
 		    </div>
 		    
 			<div class="container">
@@ -118,6 +210,8 @@
 					</div>
 				</div>
 			</div>
+			
+			<a href="#profundidad" id="baja1" class="baja scroll" ><img src="assets/img/flecha-baja.png" class="responsive-img animated bounceInUp" data-scroll-speed="2" onclick="dataLayer.push({'event': 'Bajar'});"></a>
 			
 	    </section>
 	    
@@ -321,17 +415,7 @@
 		    	<p class="puntos center-align">.</p>
 		    </div>	
 			<div id="p6">
-				<div class="container hide" id="voluntarios" >
-					<div class="row animated fadeInDown">
-						<div class="col s8 offset-s2 center-align">
-							<h2>YA ESTÁN LOS VOLUNTARIOS QUE VIAJARÁN<br>A ISLAS MALDIVAS</h2>	
-							<p>
-								CONOCE QUIÉNES SON LOS 4 VOLUNTARIOS QUE GRACIAS A TU VOTO, APRENDERÁN COMO CUIDAR NUESTRAS PLAYAS EN PARLEY OCEAN SCHOOL.
-							</p>
-							<a href="voluntarios.php" class="btn btn-primary btn-azul" role="button" target="_blank">CONÓCELOS ACÁ</a>	
-						</div>
-					</div>
-		    	</div>
+				<?php include('voluntarios.php'); ?>
 				<?php include('verano.php'); ?>
 		    </div>		    
 	    </section>	    
@@ -340,7 +424,7 @@
           <div class="container">
             <div class="row">
               <div class="col s12 center-align">
-                <h6><a href="Limpieza_de_Playas_Chile_bases_concurso.pdf" target="_blank" class="">bases legales</a> <!-- · <a href="javascript:void(0);" target="_blank" class="">términos y condiciones</a> --> <!-- · <a href="faq.php" target="_blank" class="">PREGUNTAS FRECUENTES</a> --></h6>
+                <h6><a href="Corona_Voluntarios_por_el_Oceano_bases_concurso_2017_v3.pdf" target="_blank" class="">bases legales</a> <!-- · <a href="javascript:void(0);" target="_blank" class="">términos y condiciones</a> --> <!-- · <a href="faq.php" target="_blank" class="">PREGUNTAS FRECUENTES</a> --></h6>
                 <h5>
 	                <a href="https://www.instagram.com/cerveza_corona/" target="_blank" class=""><i class="fa fa-instagram" aria-hidden="true"></i></a> 
 					<a href="https://www.facebook.com/cervezacoronachileoficial" target="_blank" class=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
@@ -360,7 +444,29 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="assets/js/materialize.min.js"></script>     
       <script type="text/javascript" src="assets/js/jquery.rut.min.js"></script>
-      <script type="text/javascript" src="assets/js/corona2.js?v=1.8.2"></script>
+      <script type="text/javascript" src="assets/js/corona2.js?v=1.6"></script>
+<?php 
+	if($conectado==1){ 
+?>	
+	<script>
+		$('.p2').removeClass('hide');
+		$('#l2').removeClass('hide');
+		$('#dos-tercios').removeClass('hide');
+		$('#l3').removeClass('hide');
+		$('#toneladas').removeClass('hide');
+		$('#l4').removeClass('hide');
+		$('#coronaseune').removeClass('hide');
+		$('#l5').removeClass('hide');
+		$('#etapa3a').removeClass('hide');
+		$('html,body').animate({
+			scrollTop: $("#etapa3a").offset().top},
+		'slow');
+	</script>
+<?php 		
+	}	
+ ?>
+      
+      
     </body>
   </html>
         
