@@ -90,7 +90,7 @@
 										$i++;
 										
 							 ?>
-							<h6><?php echo $i; ?>.- <?php echo $posPlaya; ?> <strong><?php echo $total; ?> Voluntarios</strong> <?php echo $porcentaje; ?>% </h6>
+							<h6><?php echo $i; ?>.- <a href="voluntarios.php?posPlaya=<?php echo $posPlaya; ?>"><?php echo $posPlaya; ?></a> <strong><?php echo $total; ?> Voluntarios</strong> <?php echo $porcentaje; ?>% </h6>
 							<div class="progress thin">				  	
 								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $porcentaje; ?>%">
 							    	<span class="sr-only">40% Complete (success)</span>
