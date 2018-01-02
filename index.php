@@ -340,7 +340,9 @@
           <div class="container">
 	        <div class="row">
               <div class="col s6 offset-s3 m4 offset-m4 center-align">
-	              <img src="assets/img/MMA_ChileMejor.png" class="responsive-img">
+	              <a href="http://portal.mma.gob.cl/" target="_blank">
+	              	<img src="assets/img/MMA_ChileMejor.png" class="responsive-img">
+	              </a>
               </div>
 	        </div>
             <div class="row">
