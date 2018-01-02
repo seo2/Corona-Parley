@@ -858,6 +858,8 @@ $('a.mapa-link').on('click',function(){
 		playa = "Chiloé";
 	}else if(elid=="curanipe"){		
 		playa = "Curanipe";
+	}else if(elid=="La Serena"){
+		playa = "La Serena"
 	}		
 		
        console.log(playa);

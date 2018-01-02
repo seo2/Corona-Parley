@@ -45,6 +45,47 @@
 			}  
 			return $participantes;
 		}
+
+		function laplaya($laplaya){
+			if($laplaya=="Arica"){
+				$playa = "Arica";
+			}elseif($laplaya=="Iquique"){
+				$playa = "Iquique";
+			}elseif($laplaya=="Antofagasta"){
+				$playa = "Antofagasta";
+			}elseif($laplaya=="Caldera"){
+				$playa = "Caldera";
+			}elseif($laplaya=="BahaInglesa"){
+				$playa = "Bahía Inglesa";
+			}elseif($laplaya=="Totoralillo"){
+				$playa = "Totoralillo";
+			}elseif($laplaya=="Quintero"){
+				$playa = "Quintero";
+			}elseif($laplaya=="Guanaqueros"){
+				$playa = "Guanaqueros";
+			}elseif($laplaya=="Maitencillo"){
+				$playa = "Maitencillo";
+			}elseif($laplaya=="Pichilemu"){
+				$playa = "Pichilemu";
+			}elseif($laplaya=="Puertecillo"){
+				$playa = "Puertecillo";
+			}elseif($laplaya=="Valdivia"){
+				$playa = "Valdivia";
+			}elseif($laplaya=="Cobquecura"){
+				$playa = "Cobquecura";
+			}elseif($laplaya=="Chilo"){		
+				$playa = "Chiloé";
+			}elseif($laplaya=="Curanipe"){		
+				$playa = "Curanipe";
+			}elseif($laplaya=="Concn"){		
+				$playa = "Concón";
+			}elseif($laplaya=="La Serena"){		
+				$playa = "La Serena";
+			}	
+			return $playa;
+		}
+
+
 		
 
 		$lol = 0;                      
@@ -90,7 +131,7 @@
 										$i++;
 										
 							 ?>
-							<h6><?php echo $i; ?>.- <a href="voluntarios.php?posPlaya=<?php echo $posPlaya; ?>"><?php echo $posPlaya; ?></a> <strong><?php echo $total; ?> Voluntarios</strong> <?php echo $porcentaje; ?>% </h6>
+							<h6><?php echo $i; ?>.- <a href="voluntarios.php?posPlaya=<?php echo $posPlaya; ?>"><?php echo laplaya($posPlaya); ?></a> <strong><?php echo $total; ?> Voluntarios</strong> <?php echo $porcentaje; ?>% </h6>
 							<div class="progress thin">				  	
 								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $porcentaje; ?>%">
 							    	<span class="sr-only">40% Complete (success)</span>
@@ -154,13 +195,6 @@
 						</div>
 					</div>		
 				</div><!--/col-->
-				
-								
-				
-											 	
-				
-			
-				
 				
 			</div><!--/row-->	
 			

@@ -1,10 +1,10 @@
 		    	<div class="container-fluid hide" id="verano" >
-					<div class="row animated fadeInDown">
+					<div class="row animated fadeInDown" id="veranoheader">
 						<div class="col s12 center-align">
 							<h2>¡ESTAS PLAYAS TE NECESITAN!</h2>	
 							<p>
 								SELECCIONA DÓNDE TE GUSTARÍA<br>
-								SER PARTE DEL TEAM DE LIMPIEZA.
+								SER VOLUNTARIO.
 							</p>	
 							<p><small><span id="laplaya"></span> <span id="eldia"></span></small></p>
 						</div>
@@ -18,6 +18,7 @@
 						<a href="javascript:void(0);" class="mapa-link" id="bahia-inglesa"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="totoralillo"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="quintero"></a>
+						<a href="javascript:void(0);" class="mapa-link" id="concon"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="guanaqueros"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="maitencillo"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="pichilemu"></a>
@@ -25,7 +26,7 @@
 						<a href="javascript:void(0);" class="mapa-link" id="valdivia"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="curanipe"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="chiloe"></a>						
-						<img src="assets/mapas/mapa.png?v=4" class="responsive-img">	
+						<img src="assets/mapas/mapa.png?v=5" class="responsive-img">	
 					</div>
 					
 					<div id="mapa-arica" class="mapa-info hide animated slideInRight">
@@ -537,6 +538,60 @@
 							</div>
 						</div>
 					</div>
+					<div id="mapa-concon" class="mapa-info hide animated slideInRight">
+						<a href="javascript:void(0);" class="mapa-volver"><img src="assets/mapas/volver.png" class="responsive-img"></a>
+						<div class="row">
+							<div class="col s12 m6 center-align hide-on-small-only">
+								<img src="assets/mapas/maitencillo.png">	
+							</div>
+							<div class="col s12 m6 center-align">
+								<div class="row">
+									<div class="col s5 center-align show-on-small  hide-on-med-and-up">
+										<img src="assets/mapas/maitencillo.png" class="responsive-img">	
+									</div>
+									<div class="col s7 m12 center-align">
+										<h2>Concón</h2>
+										<h3>V REGIÓN</h3>	
+										<p>
+											Esta ciudad en la V Región del país, se ha logrado posicionar como la capital de la gastronomía chilena. Además, posee grandes condiciones para los deportes acuáticos.
+										</p>	
+										<div class="mapa-linea"></div>
+										<p>
+											El 99,9% de plástico que invade las playas de Chile, proviene<br>de las personas que las visitan.
+										</p>
+									</div>
+								</div>
+								<div class="mapa-footer">
+									<div class="row">
+										<h4>SÉ PARTE DEL TEAM QUE ESTARÁ<br> 
+											EN ESTAS JORNADAS DE LIMPIEZA</h4>
+										<h5>ELIGE TU FECHA DISPONIBLE</h5>
+										<p>cupos limitados</p>
+										<form  id="form-maitencillo">
+											<div class="row">
+												<div class="col s12 m4 offset-m4 center-align">	
+													<p>
+														<input class="with-gap radios" name="posP1z" type="radio" id="posP1z" value="02/02/2018" />
+													    <label for="posP1z">02/02/2018</label>
+													</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col s12 center-align">
+													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+												</div>
+											</div>
+										</form>	
+										<div class="row">
+											<div class="col s12 m8 offset-m2 center-align">
+												<p>*RECUERDA QUE DEBERÁS LLEGAR AL PUNTO DE ENCUENTRO EN MOVILIZACIÓN PROPIA</p>
+											</div>
+										</div>								
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
 					<div id="mapa-maitencillo" class="mapa-info hide animated slideInRight">
 						<a href="javascript:void(0);" class="mapa-volver"><img src="assets/mapas/volver.png" class="responsive-img"></a>
 						<div class="row">
@@ -568,16 +623,10 @@
 										<p>cupos limitados</p>
 										<form  id="form-maitencillo">
 											<div class="row">
-												<div class="col s12 m4 offset-m2 center-align">	
+												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1i" type="radio" id="posP1i" value="02/02/2018" />
-													    <label for="posP1i">02/02/2018</label>
-													</p>
-												</div>
-												<div class="col s12 m4 center-align">	
-													<p>
-														<input class="with-gap radios" name="posP1i" type="radio" id="posP2i" value="03/02/2018" />
-													    <label for="posP2i">03/02/2018</label>
+														<input class="with-gap radios" name="posP1i" type="radio" id="posP1i" value="03/02/2018" />
+													    <label for="posP1i">03/02/2018</label>
 													</p>
 												</div>
 											</div>
@@ -755,8 +804,8 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1l" type="radio" id="posP1l"  value="22/01/2018" />
-													    <label for="posP1l">22/01/2018</label>
+														<input class="with-gap radios" name="posP1l" type="radio" id="posP1l"  value="22/02/2018" />
+													    <label for="posP1l">22/02/2018</label>
 													</p>
 												</div>
 											</div>
@@ -1006,7 +1055,7 @@
 						</div>
 						<div class="row">
 					        <div class="col s12 center-align">
-					          <a class="icon whatsapp" href="whatsapp://send?text=https://s219687.gridserver.com/clientes/modo/corona/parley/" data-action="share/whatsapp/share"  onclick="dataLayer.push({'event': 'Compartir Whatsapp'});">
+					          <a class="icon whatsapp" href="whatsapp://send?text=http://voluntariosporeloceano.cl/" data-action="share/whatsapp/share"  onclick="dataLayer.push({'event': 'Compartir Whatsapp'});">
 					            <i class="fa fa-whatsapp circle green"></i>
 					          </a>
 					

@@ -31,19 +31,19 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=2.1"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=2.2"  media="screen,projection"/>
       
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@cerveza_corona">
-		<meta name="twitter:title" content="Corona y Parley están buscando a 4 voluntarios.">
+		<meta name="twitter:title" content="Súmate a los voluntarios por el océano y limpiemos las playas de Chile.">
 		<meta name="twitter:description" content="Súmate a los voluntarios por el océano y limpiemos las playas de Chile.">
-		<meta name="twitter:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">      
+		<meta name="twitter:image" content="http://voluntariosporeloceano.cl/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">      
 
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="Corona: Voluntarios por el Océano">
 		<meta property="og:site_name" content="Corona: Voluntarios por el Océano">
-		<meta property="og:url" content="https://s219687.gridserver.com/clientes/modo/corona/parley/">
-		<meta property="og:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">
+		<meta property="og:url" content="http://voluntariosporeloceano.cl/">
+		<meta property="og:image" content="http://voluntariosporeloceano.cl/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">
 		<meta property="article:published_time" content="2017-10-23">
 		<meta property="article:author" content="http://cervezacorona.cl">      
 			
@@ -328,7 +328,7 @@
 							<p>
 								CONOCE QUIÉNES SON LOS 4 VOLUNTARIOS QUE GRACIAS A TU VOTO, APRENDERÁN COMO CUIDAR NUESTRAS PLAYAS EN PARLEY OCEAN SCHOOL.
 							</p>
-							<a href="voluntarios.php" class="btn btn-primary btn-azul" role="button" target="_blank">CONÓCELOS ACÁ</a>	
+							<a href="voluntarios.php" class="btn btn-primary btn-azul" role="button">CONÓCELOS ACÁ</a>	
 						</div>
 					</div>
 		    	</div>
@@ -338,6 +338,11 @@
 	    
  		<footer class="page-footer hide">
           <div class="container">
+	        <div class="row">
+              <div class="col s6 offset-s3 m4 offset-m4 center-align">
+	              <img src="assets/img/MMA_ChileMejor.png" class="responsive-img">
+              </div>
+	        </div>
             <div class="row">
               <div class="col s12 center-align">
                 <h6><a href="Limpieza_de_Playas_Chile_bases_concurso.pdf" target="_blank" class="">bases legales</a> <!-- · <a href="javascript:void(0);" target="_blank" class="">términos y condiciones</a> --> <!-- · <a href="faq.php" target="_blank" class="">PREGUNTAS FRECUENTES</a> --></h6>
@@ -360,7 +365,7 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="assets/js/materialize.min.js"></script>     
       <script type="text/javascript" src="assets/js/jquery.rut.min.js"></script>
-      <script type="text/javascript" src="assets/js/corona2.js?v=1.8.2"></script>
+      <script type="text/javascript" src="assets/js/corona2.js?v=1.8.3"></script>
     </body>
   </html>
         

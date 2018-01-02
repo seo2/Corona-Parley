@@ -134,11 +134,18 @@ $("#formGanador").validate({
 	}
 }); // fin validate
  
-$('a.btn-borrar').on('click', function() {
-	var ganID = $(this).data('id');
+$('a.btn-enviar').on('click', function() {
+	var posID = $(this).data('id');
+	var nombre = $(this).data('nombre');
+	var botonenviar 	= '#enviar-'+posID;
+	var botonenviando 	= '#enviando-'+posID;
+	var estado 			= '#estado-'+posID;
+			
+	$(botonenviar).addClass('hide');
+	$(botonenviando).removeClass('hide');
 	swal({
-	  title: "¿Realmente desea borrar este registro?",
-	  text: "",
+	  title: "Enviar correo a "+nombre,
+	  text: "Esto dejará a este voluntario como seleccionado para la fecha y lugar acordado.",
 	  type: "warning",
 	  showCancelButton: true,
 	  confirmButtonClass: "btn-blue",
@@ -149,23 +156,29 @@ $('a.btn-borrar').on('click', function() {
 	},
 	function(isConfirm) {
 		if (isConfirm) {
-	    	var url = "ajax/borra-ganador.php";
+			
+	    	var url = "ajax/envia-mail.php";
 	    	$.ajax({
 	           type: "POST",
 	           url: url,
-			   data: { "ganID": ganID },
+			   data: { "posID": posID },
 	            success: function(data) {
 					console.log(data);
-					if(data == "ok") {
-						swal('Se ha eliminado el registro');
-						location.reload();
+					if(data == "1") {
+						swal('Se ha enviado el correo');
+						$(estado).removeClass('hide');
+						$(botonenviando).addClass('hide');
 					}else{
 						swal('Ha ocurrido un error, por favor vuelva a intentarlo.');
+						$(botonenviar).removeClass('hide');
+						$(botonenviando).addClass('hide');
 					}
 	            }
 	         });
 		} else {
 		    txt = "You pressed Cancel!";
+			$(botonenviar).removeClass('hide');
+			$(botonenviando).addClass('hide');
 		}
 	});
 });
@@ -214,110 +227,5 @@ $("#formExcel").validate({
 		});
 	}
 }); // fin validate
-
-
-$('#btnSorteo').on('click',function(e){
-	e.preventDefault();
-	$(this).html('<i class="fa fa fa-spinner fa-spin"></i>');
-	var data = $('#formSorteo1').serialize();
-	console.log(data);
-	$.ajax({
-        type: "POST",
-        url: "ajax/ganador_aleatorio.php",
-        data: data,
-        success: function(msg) {
-			console.log(msg);
-			if(msg.success){
-				$('#nombre').val(msg.mk125_Nom);
-				$('#rut').val(msg.mk125_rut);
-				$('#codigo').val(msg.codCod);
-				$('#hora').val(msg.codHora);
-			}else{
-				swal('Ha ocurrido un error, por favor vuelva a intentarlo.');
-			}
-
-        	$("#btnSorteo").html('Aleatorio');
-        	
-        },
-        error: function(xhr, status, error) {
-			//alert(status);
-		}
-	});
-	
-	
-	
-});
-
-$('#btnSorteo1').on('click',function(e){
-	e.preventDefault();
-	$(this).html('<i class="fa fa fa-spinner fa-spin"></i>');
-	var data = $('#formSorteo1').serialize();
-	console.log(data);
-	$.ajax({
-        type: "POST",
-        url: "ajax/ganador_aleatorio_x_fecha.php",
-        data: data,
-        success: function(msg) {
-			console.log(msg);
-			if(msg.success){
-				$('#nombre').val(msg.mk125_Nom);
-				$('#rut').val(msg.mk125_rut);
-				$('#codigo').val(msg.codCod);
-				$('#hora').val(msg.codHora);
-			}else{
-				swal('Ha ocurrido un error, por favor vuelva a intentarlo.');
-			}
-
-        	$("#btnSorteo1").html('Aleatorio');
-        	
-        },
-        error: function(xhr, status, error) {
-			//alert(status);
-		}
-	});
-	
-	
-	
-});
-
-
-$("#formSueno").validate({
-	  submitHandler: function(form) {
-		$("#btnSubir").html('<i class="fa fa fa-spinner fa-spin"></i>');
-
-		var data = $('#formSueno').serialize();
-
-		$.ajax({
-            type: "POST",
-            url: "ajax/sueno.php",
-            data: data,
-            success: function(msg) {
-				console.log(msg);
-            	if(msg=='ok'){
-            						
-	            	swal({   title: "¡Excelente!",   text: "Se ha modificado el estado",   type: "success",     confirmButtonColor: "#DD6B55",   confirmButtonText: "OK",   cancelButtonText: "Ir a lista de requerimientos",  showCancelButton: false,   closeOnConfirm: false,   closeOnCancel: false , allowOutsideClick: true}, 
-	            	function(isConfirm){   
-	            	if (isConfirm) {  
-	            		window.location.replace("index.php");   
-	            	} else {     
-	            		window.location.replace(sitio+"/tareas.php");      
-	            	} });
-            	}else{
-					swal('Ha ocurrido un error, por favor vuelva a intentarlo.');
-            	}
-            	$("#btnSubir").html('<i class="fa fa-dot-circle-o"></i> Guardar');
-            	
-            },
-            error: function(xhr, status, error) {
-				//alert(status);
-			}
-		
-		
-		});
-	}
-}); // fin validate
-
-
-
 
 
