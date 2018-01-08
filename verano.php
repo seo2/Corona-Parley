@@ -10,7 +10,8 @@
 						</div>
 					</div>
 					<div id="mapa" class="animated slideInLeft">
-						<a href="javascript:void(0);" class="mapa-link" id="arica"></a>
+						<?php /* Al subir una galería, se debe poner el link y cambiar la clase */ ?>
+						<a href="arica.php" class="mapa-link2" id="arica"></a> 
 						<a href="javascript:void(0);" class="mapa-link" id="iquique"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="antofagasta"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="caldera"></a>
@@ -25,7 +26,11 @@
 						<a href="javascript:void(0);" class="mapa-link" id="puertecillo"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="valdivia"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="curanipe"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="chiloe"></a>						
+						<a href="javascript:void(0);" class="mapa-link" id="chiloe"></a>	
+						
+						<?php /* Acá se van agregando los checks por cada región*/ ?>					
+						<img src="assets/img/check.png" class="responsive-img check" id="check_arica">	
+												
 						<img src="assets/mapas/mapa.png?v=5" class="responsive-img">	
 					</div>
 					

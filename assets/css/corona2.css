@@ -208,7 +208,9 @@ footer h5 a:hover{opacity: 0.8;}
 #profundidad #verano p{line-height: 150%}
 #mapa{position: relative; width: 365px; margin: 0 auto;}
 
+.mapa-link2,
 .mapa-link{position: absolute; height: 20px;/*  background: rgba(255, 0, 0, 0.2) */}
+.mapa-link2:hover,
 .mapa-link:hover{border-bottom: 1px dotted #fff; cursor: pointer;}
 #arica{width: 57px; top: 20px; left: 180px;}
 #iquique{width: 73px; top: 69px; left: 173px;}
@@ -290,6 +292,11 @@ body.voluntarios{background: url(../img/VXO_DESKTOP_2.jpg) center top; backgroun
 .resena p{font-size: 12px;}
 .resena .nombre p{width: 100%; text-align: center;font-size: 14px; }
 .resena .nombre p.amarillo{font-weight: bold;}
+
+#galerias h1{color: #edc14a;font-size: 24px; font-weight: bold;margin-bottom: 5px;}
+#galerias h2{color: #edc14a;font-size: 18px; margin: 0;}
+#galerias p{color: #fff;font-size: 14zpx;}
+
 
 @media only screen and (max-width: 768px) {	
 	#agegate h2 {
