@@ -42,7 +42,17 @@ if ($ajax) {
 			$imagen = 'VXO_MAILING_ARICA-5ENERO.png';
 		}elseif($posFecha=='06/01/2018'){
 			$imagen = 'VXO_MAILING_ARICA-6ENERO.png';
-		}		
+		}elseif($posFecha=='11/01/2018'){ // caldera
+			$imagen = 'VXO_MAILING_SELECCIONADO-ANTOFA11ENE2018.png';
+		}elseif($posFecha=='12/01/2018'){ // caldera
+			$imagen = 'VXO_MAILING_SEL-CALDERAT2.png';
+		}elseif($posFecha=='13/01/2018'){ // bahía inglesa
+			$imagen = 'VXO_MAILING_SEL-BAHIAT2.png';
+		}	
+	
+	
+
+			
 		
 		$message   = "<!DOCTYPE html>";
 		$message  .= "<html lang='en' style='box-sizing: border-box; color: rgba(0, 0, 0, 0.87);  font-size: 14px; font-weight: normal; height: 100%; line-height: 1.5; width: 100%; '>";

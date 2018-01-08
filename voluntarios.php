@@ -89,6 +89,7 @@
     </head>
 
     <body class="voluntarios">
+		<a href="index.php" class="voluntarios-volver"><img src="assets/mapas/volver.png" class="responsive-img"></a>
 	    
     	<div class="container">
 			<div class="row animated fadeInDown">
@@ -103,7 +104,7 @@
 											<p class="amarillo">José Tomás Pumarino</p>
 										</div>
 										<div class="col s8 center-align valign-wrapper">
-											<p>Soy Jose Tomás Pumarino, tengo 25 años, Ingeniero Comercial mención economía de la Universidad de Chile, trabajo con investigador en el Observatorio de Sostenibilidad de la Facultad de Economía y Negocios de la Universidad de Chile y como Analista de Desarrollo Comercial en ESACHS.</p>
+											<p>Soy Jose Tomás Pumarino, tengo 25 años, Ingeniero Comercial mención economía de la Universidad de Chile, trabajo como investigador en el Observatorio de Sostenibilidad de la Facultad de Economía y Negocios de la Universidad de Chile y como Analista de Desarrollo Comercial en ESACHS.</p>
 										</div>
 									</div>
 								</div>

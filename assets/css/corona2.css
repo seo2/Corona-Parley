@@ -217,17 +217,24 @@ footer h5 a:hover{opacity: 0.8;}
 #la-serena{width: 89px; top: 383px; left: 134px;}
 #bahia-inglesa{width: 123px; top: 309px; left: 110px;}
 #totoralillo{width: 111px; top: 409px; left: 105px;}
-#quintero{width: 83px; top: 466px; left: 92px;}
+#quintero{width: 83px; top: 475px; left: 96px;}
+#concon{width: 73px; top: 495px; left: 106px;}
 #guanaqueros{width: 120px; top: 434px; left: 99px;}
-#maitencillo{width: 110px; top: 489px; left: 88px;}
+#maitencillo{width: 110px; top: 455px; left: 73px;}
 #pichilemu{width: 91px; top: 516px; left: 95px;}
 #puertecillo{width: 107px; top: 544px; left: 86px;}
 #valdivia{width: 76px; top: 704px; left: 113px;}
 #curanipe{ width: 83px; top: 573px; left: 118px;}
 #chiloe{width: 59px; top: 786px; left: 122px;}
 
+
+.check{position: absolute; width: 21px; }
+#check_arica{top: 20px; left: 250px;}
+
 .mapa-info{position: relative;}
 .mapa-volver{position: absolute; left: 20px; top: 20px;}
+.voluntarios-volver{position: absolute; left: 20px; top: 20px; z-index: 10}
+
 
 
 .mapa-linea{width: 25%; margin: 0 auto; border-bottom: 1px solid #edc14a;}
@@ -337,7 +344,10 @@ body.voluntarios{background: url(../img/VXO_DESKTOP_2.jpg) center top; backgroun
 	
 	#profundidad #verano .mapa-info p{font-size: 12px;}
 	.mapa-volver { width: 20px; }
+	.voluntarios-volver{ width: 20px;}
 	.mapa-footer { background: url(../mapas/bg.png) center;}
+	
+	body.voluntarios{padding-top: 50px;}
 	.voluntario p{font-size: 11px;}
 	.resena{position: relative;}
 }

@@ -28,8 +28,7 @@
 				$posNomAmi 	= $r["posNomAmi"]; 	
 				$posMailAmi = $r["posMailAmi"]; 	
 				$posFonoAmi	= $r["posFonoAmi"]; 	
-				$posFecha 	= $r["posFecha"]; 	
-				$posFecha2 	= $r["posFecha2"]; 
+				$posFecha 	= $r["posFecha"]; 
 				$posEst 	= $r["posEst"]; 	
 				$posTS 		= $r["posTS"]; 	
 				$posPlaya 	= $r["posPlaya"]; 	
@@ -226,9 +225,6 @@
 						</div>	
 						<div class="row">
 							<div class="col m8 offset-m2"data-scroll-speed="4">
-								<?php if($posFecha2){
-									$posFecha = $posFecha2;
-								} ?>
 								<p class="animated fadeIn">Te esperamos en <?php echo laplaya($posPlaya); ?> el <?php echo $posFecha; ?></p>
 							</div>
 						</div>						

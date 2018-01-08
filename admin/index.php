@@ -116,7 +116,7 @@
 					<?php
 						
 							$i = 0;
-							$sql = "SELECT COUNT(*) AS total, posPlaya FROM verano GROUP BY posPlaya order by total DESC";
+							$sql = "SELECT COUNT(*) AS total, posPlaya FROM verano where posPlaya != '' GROUP BY posPlaya order by posPlaya ASC";
 								$semanas = $db->rawQuery($sql);
 								if($semanas){
 									foreach ($semanas as $s) {
