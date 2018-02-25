@@ -35,15 +35,15 @@
       
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@cerveza_corona">
-		<meta name="twitter:title" content="Corona y Parley están buscando a 4 voluntarios.">
+		<meta name="twitter:title" content="Súmate a los voluntarios por el océano y limpiemos las playas de Chile.">
 		<meta name="twitter:description" content="Súmate a los voluntarios por el océano y limpiemos las playas de Chile.">
-		<meta name="twitter:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">      
+		<meta name="twitter:image" content="http://voluntariosporeloceano.cl/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">      
 
 		<meta property="og:type" content="article">
 		<meta property="og:title" content="Corona: Voluntarios por el Océano">
 		<meta property="og:site_name" content="Corona: Voluntarios por el Océano">
-		<meta property="og:url" content="https://s219687.gridserver.com/clientes/modo/corona/parley/">
-		<meta property="og:image" content="https://s219687.gridserver.com/clientes/modo/corona/parley/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">
+		<meta property="og:url" content="http://voluntariosporeloceano.cl/">
+		<meta property="og:image" content="http://voluntariosporeloceano.cl/assets/img/IMAGEN_COMPARTIR-VXOWEB.jpg">
 		<meta property="article:published_time" content="2017-10-23">
 		<meta property="article:author" content="http://cervezacorona.cl">        
 

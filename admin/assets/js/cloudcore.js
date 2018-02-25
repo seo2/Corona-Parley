@@ -167,7 +167,6 @@ $('a.btn-enviar').on('click', function() {
 					if(data == "1") {
 						swal('Se ha enviado el correo');
 						$(estado).removeClass('hide');
-						$(botonenviando).addClass('hide');
 					}else{
 						swal('Ha ocurrido un error, por favor vuelva a intentarlo.');
 						$(botonenviar).removeClass('hide');

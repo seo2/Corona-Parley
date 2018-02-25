@@ -31,7 +31,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
-		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=2.3"  media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/corona2.css?v=2.4"  media="screen,projection"/>
       
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@cerveza_corona">
@@ -332,7 +332,7 @@
 						</div>
 					</div>
 		    	</div>
-				<?php include('verano.php'); ?>
+				<?php include('verano2.php'); ?>
 		    </div>		    
 	    </section>	    
 	    

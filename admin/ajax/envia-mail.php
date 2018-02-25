@@ -36,11 +36,13 @@ if ($ajax) {
 			$posFecha = $posFecha2;
 		}
 
+
+		/* Acá hay que agregar la condición según la fecha del mail y lugar (algunos lugares tienen más de una fecha) */
 		if($posFecha=='04/01/2018'){
 			$imagen = 'VXO_MAILING_ARICA-4ENERO.png';
-		}elseif($posFecha=='05/01/2018'){
+		}elseif($posFecha=='05/01/2018'){ // Arica
 			$imagen = 'VXO_MAILING_ARICA-5ENERO.png';
-		}elseif($posFecha=='06/01/2018'){
+		}elseif($posFecha=='06/01/2018'){ // Arica
 			$imagen = 'VXO_MAILING_ARICA-6ENERO.png';
 		}elseif($posFecha=='11/01/2018'){ // caldera
 			$imagen = 'VXO_MAILING_SELECCIONADO-ANTOFA11ENE2018.png';
@@ -48,9 +50,40 @@ if ($ajax) {
 			$imagen = 'VXO_MAILING_SEL-CALDERAT2.png';
 		}elseif($posFecha=='13/01/2018'){ // bahía inglesa
 			$imagen = 'VXO_MAILING_SEL-BAHIAT2.png';
-		}	
+		}elseif($posFecha=='20/01/2018'){ // Iquique
+			$imagen = 'VXO_MAILING_SEL-IQUIQUE.png';
+		}elseif($posFecha=='25/01/2018'){ // Totoralillo
+			$imagen = 'VXO_MAILING_SELECCIONADO-TOTORALILLO.png';
+		}elseif($posFecha=='26/01/2018'){ // La Serena
+			$imagen = 'VXO_MAILING_SELECCIONADO-LASERENA.png';
+		}elseif($posFecha=='27/01/2018'){ // Guanaqueros
+			$imagen = 'VXO_MAILING_SELECCIONADO-GUANAQUEROS.png';
+		}elseif($posFecha=='01/02/2018'){ // Quintero
+			$imagen = 'VXO_MAILING_SELECCIONADO-QUINTERO_v2.png';
+		}elseif($posFecha=='02/02/2018'){ // Quintero
+			$imagen = 'VXO_MAILING_SELECCIONADO-CONCON_v2.png';
+		}elseif($posFecha=='03/02/2018'){ // Quintero
+			$imagen = 'VXO_MAILING_SELECCIONADO-MAITEN_v2.png';
+		}elseif($posFecha=='09/02/2018'){ // Pichilemu 1
+			$imagen = '9FEB_VXO_MAILING_SELECCIONADO-PICHILEMU.png';
+		}elseif($posFecha=='10/02/2018'){ // Pichilemu 2
+			$imagen = '10FEB_VXO_MAILING_SELECCIONADO-PICHILEMU.png';
+		}elseif($posFecha=='16/02/2018'){ // Pichilemu 2
+			$imagen = 'VXO_MAILING_POSTULACIONLIMPIEZAS2018-PUERTECILLO.png';
+		}elseif($posFecha=='17/02/2018'){ // Pichilemu 2
+			$imagen = 'VXO_MAILING_POSTULACIONLIMPIEZAS2018-MATANZAS.png';
+		}elseif($posFecha=='20/02/2018'){ // CURANIPE
+			$imagen = 'VXO_MAILING_POSTULACIONLIMPIEZAS2018-CURANIPE.png';
+		}elseif($posFecha=='22/02/2018'){ // VALDIVIA
+			$imagen = 'VXO_MAILING_POSTULACIONLIMPIEZAS2018-VALDIVIA.png';
+		}elseif($posFecha=='24/02/2018'){ // CHILOE
+			$imagen = 'VXO_SELECCIONADO_MAILING_POSTULACIONLIMPIEZAS2018-CHILOE.png';
+		}
+
+		
 	
-	
+	//echo $imagen;
+	//die();
 
 			
 		
@@ -64,7 +97,7 @@ if ($ajax) {
 		$message  .= '<table style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;border-spacing:0 !important;border-collapse:collapse !important;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;background-color:#f3f3f3; display:inline-table; text-align: left;" border="0" cellpadding="0" cellspacing="0" width="650" height="648">';
 		$message  .= '<tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">';
 		$message  .= '<td colspan="5" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;padding:0;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;">';
-		$message  .= '<a href="http://voluntariosporeloceano.cl/confirma_verano.php?posID='.$posID.'">';
+		$message  .= '<a href="http://voluntariosporeloceano.cl/confirma_verano.php?posID='.$posID.'" title="'.$imagen.'">';
 		$message  .= '<img src="http://voluntariosporeloceano.cl/mails/'.$imagen.'" width="650" height="648" alt="Felicitaciones, bienvenidos al equipo de voluntarios por las playas de Chile" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;border:0;-ms-interpolation-mode:bicubic;display:block;">';
 		$message  .= "</a></td></tr></table></body></html>";
 		$message  .= "</div>";

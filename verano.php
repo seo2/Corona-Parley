@@ -12,24 +12,31 @@
 					<div id="mapa" class="animated slideInLeft">
 						<?php /* Al subir una galería, se debe poner el link y cambiar la clase */ ?>
 						<a href="arica.php" class="mapa-link2" id="arica"></a> 
-						<a href="javascript:void(0);" class="mapa-link" id="iquique"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="antofagasta"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="caldera"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="la-serena"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="bahia-inglesa"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="totoralillo"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="quintero"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="concon"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="guanaqueros"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="maitencillo"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="pichilemu"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="puertecillo"></a>
+						<a href="iquique.php" class="mapa-link2" id="iquique"></a>
+						<a href="antofagasta.php" class="mapa-link2" id="antofagasta"></a>
+						<a href="caldera.php" class="mapa-link2" id="caldera"></a>
+						<a href="la-serena.php" class="mapa-link2" id="la-serena"></a>
+						<a href="bahia-inglesa.php"   class="mapa-link2" id="bahia-inglesa"></a>
+						<a href="totoralillo.php" class="mapa-link2" id="totoralillo"></a>
+						<a href="quintero.php" class="mapa-link2" id="quintero"></a>
+						<a href="concon.php" class="mapa-link2" id="concon"></a>
+						<a href="guanaqueros.php" class="mapa-link2" id="guanaqueros"></a>
+						<a href="maitencillo.php" class="mapa-link2" id="maitencillo"></a>
+						<a href="pichilemu.php" class="mapa-link2" id="pichilemu"></a>
+						<a href="puertecillo.php" class="mapa-link2" id="puertecillo"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="valdivia"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="curanipe"></a>
+						<a href="curanipe.php" class="mapa-link2" id="curanipe"></a>
 						<a href="javascript:void(0);" class="mapa-link" id="chiloe"></a>	
 						
-						<?php /* Acá se van agregando los checks por cada región*/ ?>					
-						<img src="assets/img/check.png" class="responsive-img check" id="check_arica">	
+						<?php /* Acá se van agregando los checks por cada región*/ ?>	
+						<img src="assets/img/check.png" class="responsive-img check" id="check_iquique">
+						<img src="assets/img/check.png" class="responsive-img check" id="check_arica">
+						<img src="assets/img/check.png" class="responsive-img check" id="check_antofagasta">	
+						<img src="assets/img/check.png" class="responsive-img check" id="check_atacama">
+						<img src="assets/img/check.png" class="responsive-img check" id="check_laserena">
+						<img src="assets/img/check.png" class="responsive-img check" id="check_concon">
+						<img src="assets/img/check.png" class="responsive-img check" id="check_pichilemu">
+						<img src="assets/img/check.png" class="responsive-img check" id="check_curanipe">
 												
 						<img src="assets/mapas/mapa.png?v=5" class="responsive-img">	
 					</div>
@@ -129,18 +136,20 @@
 											EN ESTAS JORNADAS DE LIMPIEZA</h4>
 										<h5>ELIGE TU FECHA DISPONIBLE</h5>
 										<p>cupos limitados</p>
+
 										<form  id="form-iquique">
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">		
 													<p>
-														<input class="with-gap radios" name="posP1b" type="radio" id="posP2c" value="20/01/2018" />
+														<input class="with-gap radios" name="posP1b" type="radio" id="posP2c" value="20/01/2018" disabled="" />
 													    <label for="posP2c">20/01/2018</label>
 													</p>	
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+												<!--	<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+												<p>Inscripciones Cerradas.</p>
 												</div>
 											</div>
 										</form>	
@@ -352,15 +361,17 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1f" type="radio" id="posP1f" value="25/01/2018" />
+														<input class="with-gap radios" name="posP1f" type="radio" id="posP1f" value="25/01/2018" disabled="" />
 													    <label for="posP1f">25/01/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas.</p>
 												</div>
+												
 											</div>
 										</form>	
 										<div class="row">
@@ -406,7 +417,7 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1z" type="radio" id="posP1z" value="26/01/2018" />
+													<!--	<input class="with-gap radios" name="posP1z" type="radio" id="posP1z" value="26/01/2018" disabled="" />-->
 													    <label for="posP1z">26/01/2018</label>
 													</p>
 												</div>
@@ -421,7 +432,8 @@
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas.</p>
 												</div>
 											</div>
 										</form>	
@@ -468,14 +480,15 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1g" type="radio" id="posP1g" value="01/02/2018" />
+														<input class="with-gap radios" name="posP1g" type="radio" id="posP1g" value="01/02/2018" disabled="" />
 													    <label for="posP1g">01/02/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													Inscripciones Cerradas
 												</div>
 											</div>
 										</form>	
@@ -522,14 +535,15 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1h" type="radio" id="posP1h" value="27/01/2018" />
+														<input class="with-gap radios" name="posP1h" type="radio" id="posP1h" value="27/01/2018" disabled="" />
 													    <label for="posP1h">27/01/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas.</p>
 												</div>
 											</div>
 										</form>	
@@ -576,14 +590,15 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1z" type="radio" id="posP1z" value="02/02/2018" />
+														<input class="with-gap radios" name="posP1z" type="radio" id="posP1z" value="02/02/2018" disabled="" />
 													    <label for="posP1z">02/02/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													Inscripciones Cerradas
 												</div>
 											</div>
 										</form>	
@@ -630,14 +645,15 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1i" type="radio" id="posP1i" value="03/02/2018" />
+														<input class="with-gap radios" name="posP1i" type="radio" id="posP1i" value="03/02/2018" disabled="" />
 													    <label for="posP1i">03/02/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													Inscripciones Cerradas
 												</div>
 											</div>
 										</form>	
@@ -688,20 +704,21 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m2 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1j" type="radio" id="posP1j"  value="09/02/2018" />
+														<!--<input class="with-gap radios" name="posP1j" type="radio" id="posP1j"  value="09/02/2018" />-->
 													    <label for="posP1j">09/02/2018</label>
 													</p>
 												</div>
 												<div class="col s12 m4 center-align">		
 													<p>
-														<input class="with-gap radios" name="posP1j" type="radio" id="posP2j"  value="10/02/2018" />
+														<!--<input class="with-gap radios" name="posP1j" type="radio" id="posP2j"  value="10/02/2018" />-->
 													    <label for="posP2j">10/02/2018</label>
 													</p>	
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas</p>
 												</div>
 											</div>
 										</form>	
@@ -749,20 +766,21 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m2 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1k" type="radio" id="posP1k"  value="16/02/2018" />
+														<!--<input class="with-gap radios" name="posP1k" type="radio" id="posP1k"  value="16/02/2018" />-->
 													    <label for="posP1k">16/02/2018</label>
 													</p>
 												</div>
 												<div class="col s12 m4 center-align">		
 													<p>
-														<input class="with-gap radios" name="posP1k" type="radio" id="posP2k"  value="17/02/2018" />
+														<!--<input class="with-gap radios" name="posP1k" type="radio" id="posP2k"  value="17/02/2018" />-->
 													    <label for="posP2k">17/02/2018</label>
 													</p>	
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas</p>
 												</div>
 											</div>
 										</form>	
@@ -795,7 +813,7 @@
 										</p>	
 										<div class="mapa-linea"></div>
 										<p>
-											Dos unidades de plástico invaden cada paso que damos por las playas de Chile.
+											Dos unidades de plástico invaden cada paso que damos por las playas de Chile.
 										</p>
 									</div>
 								</div>
@@ -809,14 +827,15 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1l" type="radio" id="posP1l"  value="22/02/2018" />
+														<!--<input class="with-gap radios" name="posP1l" type="radio" id="posP1l"  value="22/02/2018" />-->
 													    <label for="posP1l">22/02/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas</p>
 												</div>
 											</div>
 										</form>	
@@ -864,14 +883,15 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1m" type="radio" id="posP1m"  value="20/02/2018" />
+														<!--<input class="with-gap radios" name="posP1m" type="radio" id="posP1m"  value="20/02/2018" readonly="" />-->
 													    <label for="posP1m">20/02/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas</p>
 												</div>
 											</div>
 										</form>	
@@ -918,14 +938,15 @@
 											<div class="row">
 												<div class="col s12 m4 offset-m4 center-align">	
 													<p>
-														<input class="with-gap radios" name="posP1n" type="radio" id="posP1n"  value="24/02/2018" />
+														<!--<input class="with-gap radios" name="posP1n" type="radio" id="posP1n"  value="24/02/2018" />-->
 													    <label for="posP1n">24/02/2018</label>
 													</p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col s12 center-align">
-													<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>
+													<!--<button class="btn waves-effect waves-light" type="button" id="btnP1" onclick="dataLayer.push({'event': 'Postular'});">Postular</button>-->
+													<p>Inscripciones Cerradas</p>
 												</div>
 											</div>
 										</form>	

@@ -94,7 +94,7 @@ function reiniciar(){
 	
 	$(window).scroll(function (event) {
 		var scroll = $(window).scrollTop();
-		console.log(scroll);
+		//console.log(scroll);
 		
 		if(ancho < 768){
 			if(scroll>=200){
@@ -822,6 +822,9 @@ $('a.votar').on('click',function(){
 $('a.mapa-link').on('click',function(){
 	$('#mapa').addClass('hide');
 	elid	= $(this).attr('id');
+
+	console.log("id playa: " + elid);
+
 	$('#mapa-'+elid).removeClass('hide');
 	$('html, body').animate({
 			scrollTop: $( '#verano' ).offset().top
@@ -860,6 +863,8 @@ $('a.mapa-link').on('click',function(){
 		playa = "Curanipe";
 	}else if(elid=="La Serena"){
 		playa = "La Serena"
+	}else if(elid=="concon"){
+		playa = "Concn"
 	}		
 		
        console.log(playa);

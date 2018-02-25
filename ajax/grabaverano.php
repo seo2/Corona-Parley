@@ -19,9 +19,8 @@ if ($ajax) {
 	$fecha			= filter_var($_POST["fecha"], FILTER_SANITIZE_STRING);
 
 
-/*
 	$existe = 0;
-	$participante = $db->rawQuery('select * from verano where posRut LIKE "'.$rut.'"');
+	$participante = $db->rawQuery('select * from verano where posRut LIKE "'.$rut.'" and posPlaya LIKE"'.$playa.'"');
 	if($participante){
 		foreach ($participante as $p) {
 			$existe = 1;
@@ -29,7 +28,6 @@ if ($ajax) {
 	}  
 
 	if($existe == 0){
-*/
 			
 		$ua		= $_SERVER['HTTP_USER_AGENT'];
 		$ip		= $_SERVER['REMOTE_ADDR'];	
@@ -61,11 +59,9 @@ if ($ajax) {
 		}else{
 			echo 'error';
 		}
-/*
 	}else{
 		echo 'existe';
 	}
-*/
 }else{
 	echo 'error';
 }

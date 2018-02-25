@@ -231,7 +231,16 @@ footer h5 a:hover{opacity: 0.8;}
 
 
 .check{position: absolute; width: 21px; }
+#check_iquique {top: 69px; left: 260px;}
 #check_arica{top: 20px; left: 250px;}
+#check_atacama{top: 301px; left: 250px;}
+#check_antofagasta{top: 176px;left: 268px;}
+#check_laserena{top: 408px;left: 232px;}
+#check_concon{top: 466px;left: 238px;}
+#check_pichilemu {top: 526px;left: 235px;}
+#check_curanipe {top: 566px;left: 225px;}
+#check_valdivia {top: 666px;left: 225px;}
+#check_chiloe {top: 766px;left: 225px;}
 
 .mapa-info{position: relative;}
 .mapa-volver{position: absolute; left: 20px; top: 20px;}

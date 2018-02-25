@@ -23,7 +23,7 @@ if($conectado==1){
 }
 */
 ?>
-		    	<div class="container hide" id="etapa3a" >
+		    	<div class="container" id="etapa3a" >
 			    	<div class="row animated fadeInUp">
 						<div class="col m10 offset-m1">
 							<div class="row">

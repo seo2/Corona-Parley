@@ -16,7 +16,7 @@ use Facebook\Exceptions\FacebookSDKException;
  */
 $appId         = '1293264434152970'; //Facebook App ID
 $appSecret     = '812833acbb8671aa037f45f864f861ed'; //Facebook App Secret
-$redirectURL   = 'https://s219687.gridserver.com/clientes/modo/corona/parley/?redirect=1'; //Callback URL
+$redirectURL   = 'http://voluntariosporeloceano.cl/?redirect=1'; //Callback URL
 $fbPermissions = array('email');  //Optional permissions
 
 $fb = new Facebook(array(

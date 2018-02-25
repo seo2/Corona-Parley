@@ -225,7 +225,16 @@
 						</div>	
 						<div class="row">
 							<div class="col m8 offset-m2"data-scroll-speed="4">
-								<p class="animated fadeIn">Te esperamos en <?php echo laplaya($posPlaya); ?> el <?php echo $posFecha; ?></p>
+								<p class="animated fadeIn">Te esperamos el <?php echo $posFecha; ?> en 
+									
+									<?php 
+
+										$_playa = laplaya($posPlaya);
+										if($posFecha == "17/02/2018" && $_playa == "Puertecillo"){
+											$_playa = "Matanzas";
+										}
+
+									echo $_playa; ?> </p>
 							</div>
 						</div>						
 					</div>
