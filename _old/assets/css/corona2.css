@@ -1,0 +1,293 @@
+html,body{width: 100%; height: 100%;}
+body{text-transform: uppercase;/* background: #003b66; */ background: #001C2F url(../img/WEB_VOLUNTARIOS_fondo_2.png) no-repeat; background-size: cover;}
+
+body.agegate{background: url(../img/WEB_VOLUNTARIOS_fondo_2.png) no-repeat;  background-size: cover;}
+a{color: #edc14a;}
+#agegate{background: rgba(0,0,0,0.6); height: 100%;width: 100%; color: #fff;}
+#agegate h2{font-size: 30px; font-weight: normal; }
+#agegate img.logo{margin-top: 40px;}
+#cajafecha{border: 3px solid #fff;}
+#cajafecha input[type=text]:not(.browser-default),
+#cajafecha input[type=text]:not(.browser-default):focus:not([readonly]){ border: none; padding: 0; margin: 10px 0; text-align: center; height: 30px; border-radius: 0; -webkit-box-shadow: none; box-shadow: none }
+#agegate .btn { border: 3px solid #fff; color: #fff; background: transparent; border-radius: 0; height: auto; letter-spacing: 2px; height: 56px; line-height: 52px; width: 100%; padding: 0; }
+
+.diames{ border-right: 1px solid !important; margin-right: -1px !important;}
+
+#home{/* background: url(../img/bg-home.jpg?v=2) no-repeat center bottom; */ height: 100%; width: 100%; background-size: cover; padding-top: 20px; position: relative;color: #fff;}
+#redes{position: absolute; right: 70px;top: 70px;}
+#nubes{position: absolute; width: 50%; top: 15%;}
+#home h1{font-size: 60px; font-weight: bolder; margin: 0;}
+#home p{text-transform: uppercase;  font-size: 14px; letter-spacing: 2px; font-weight: bolder; margin-top: 0;}
+#home p a{font-size: 30px; color: #fff; display: inline-block; margin: 0 10px;}
+.baja{position: absolute; bottom: 20px;left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 60px; z-index: 1000;}
+
+#logohome{margin-bottom: 0; margin-top:100px;}
+
+#profundidad{ height: 4680px;  position: relative; transition: all 0.2s ease-in-out; width: 100%;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#386c6e+0,011824+100 */
+/*
+	background: #386c6e;
+	background: -moz-linear-gradient(top, #386c6e 0%, #011824 100%); 
+	background: -webkit-linear-gradient(top, #386c6e 0%,#011824 100%);
+	background: linear-gradient(to bottom, #386c6e 0%,#011824 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#386c6e', endColorstr='#011824',GradientType=0 ); 
+*/
+	overflow: hidden;}
+
+#p1{ /* background: url(../img/bg-profundidad.png?v=2) no-repeat center top; */width: 100%; background-size: contain; padding-top: 200px; position: relative; padding-bottom: 200px;}
+#mancha1{position: absolute; z-index: 1;opacity: 0.8; top: 270px; mix-blend-mode: multiply;}
+#porque{position: relative; z-index: 10}
+#profundidad h2{color: #edc14a;  font-weight: bold;    font-size: 26px;}
+#profundidad h3{color: #fff; font-size: 15px;}
+#profundidad p{color: #fff; line-height: 250%; letter-spacing: 1px;}
+#profundidad p.puntos{ position: relative;color: #edc14a;font-weight: bold; z-index: 10; line-height: 0px; font-size: 10px; letter-spacing: 4px;}
+#l1{position: relative; z-index: 10; margin-top: -200px;}
+
+#mancha2{position: absolute; z-index: 1;opacity: 0.8; top: 1470px; mix-blend-mode: multiply; width: 100%; left: -130px;}
+#mancha2 img{transform: rotate(-35deg);}
+#p2{width: 100%; position: relative;}
+#cada-metro{position: relative; z-index: 10; margin-top: -50px;}
+#cada-metro h2{margin-top: -20px;}
+
+#l2{position: relative; z-index: 10; margin-top: -20px;}
+#mancha3{position: absolute; z-index: 1;opacity: 0.8; top: 2490px; mix-blend-mode: multiply; width: 100%; left: -130px;}
+#mancha3 img{transform: rotate(-175deg);}
+#p3{width: 100%; position: relative; }
+#dos-tercios{position: relative; z-index: 10; margin-top: -40px;}
+#dos-tercios p{margin-top: -10px; margin-left: 40px;}
+
+#l3{position: relative; z-index: 10; top: -170px; left: -10%;}
+
+#p4{width: 100%; position: relative; margin-top: -100px;}
+#toneladas{position: relative; z-index: 10}
+#toneladas h2{font-size: 40px;}
+#toneladas p{margin-top: -30px; }
+#toneladas p span{font-size: 11px;}
+
+#circulo{position: absolute; top: -100px; left: 50%; width: 400px; margin-left: -200px;}
+
+#l4{position: relative; z-index: 10; top: 110px;}
+
+#mancha4{position: absolute; z-index: 1;opacity: 0.8; top: 4000px; mix-blend-mode: multiply; width: 100%; left: -130px;}
+#mancha4 img{transform: rotate(-205deg);}
+
+#p5{width: 100%; position: relative; margin-top: 160px; z-index: 10;}
+#coronaseune{position: relative; z-index: 10}
+#coronaseune h2{font-size: 34px; line-height: 130%; margin-bottom: 80px;}
+#coronaseune p{margin-top: -30px; }
+#coronaseune p span{font-size: 11px;}
+#profundidad p.puntos#l5a { position: absolute; top: 550px; left: -410px; }
+#profundidad p.puntos#l5b { position: absolute; top: 450px; right: -300px; }
+#l5{ position: relative; z-index: 10;}
+
+#mancha5{position: absolute; z-index: 1;opacity: 0.8; top: 5000px; mix-blend-mode: multiply; width: 100%; left: -30px;}
+#mancha5 img{transform: rotate(-175deg);}
+
+#p6{width: 100%; position: relative; margin-top: 40px; z-index: 10;}
+#paso0{position: relative; z-index: 10}
+#paso0 h2{font-size: 34px; line-height: 130%; margin-bottom: 80px; background: url(../img/circulo2.png) no-repeat center center; height: 250px; padding: 80px 0 0 0; background-size: contain;}
+#paso0 p{margin-top: -30px; }
+#paso0 p.limite{margin-top: 10px; font-size: 12px;}
+#paso0 p span{font-size: 11px;}
+
+.btn{border: 1px solid #fff; color: #edc14a; background: transparent; padding: 10px 70px; border-radius: 11px; height: auto; letter-spacing: 2px;}
+.btn:hover, .btn:focus{ background: transparent; color: #fff;}
+.votar .btn{padding: 10px;}
+.votar .btn.votar{padding: 10px 50px;}
+
+#paso{ top: -20px; position: absolute; left: 0; right: 0; color: #fff;}
+
+#paso1{}
+#paso1 h2{font-size: 40px; line-height: 150%;}
+#paso1 p{margin-bottom: 50px;}
+
+
+.select-wrapper span.caret{color: #fff;}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+	border: 1px solid #fff;
+    padding: 0 5px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px 0 0 #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+.input-field label{color: #fff !important;}
+.input-field.col label { left: 1.75rem; }
+
+input:not([type]).validate+label, input[type=text]:not(.browser-default).validate+label, input[type=password]:not(.browser-default).validate+label, input[type=email]:not(.browser-default).validate+label, input[type=url]:not(.browser-default).validate+label, input[type=time]:not(.browser-default).validate+label, input[type=date]:not(.browser-default).validate+label, input[type=datetime]:not(.browser-default).validate+label, input[type=datetime-local]:not(.browser-default).validate+label, input[type=tel]:not(.browser-default).validate+label, input[type=number]:not(.browser-default).validate+label, input[type=search]:not(.browser-default).validate+label, textarea.materialize-textarea.validate+label{}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    border: 2px solid #fff;
+}
+[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #edc14a;
+    border-bottom: 2px solid #edc14a;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+label{color: #fff;}
+
+input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown {
+    border-bottom: 1px solid #edc14a;
+    -webkit-box-shadow: 0 1px 0 0 #edc14a;
+    box-shadow: 0 1px 0 0 #edc14a;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #edc14a;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #edc14a;
+}
+
+[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
+    border: 2px solid #fff;
+}
+
+textarea.materialize-textarea { min-height: 20rem; }
+
+.dropdown-content { background-color: #003b66; }
+.dropdown-content li>a, .dropdown-content li>span { color: #edc14a; }
+
+p.comparte{line-height: 160%; margin-top: 50px;}
+p.comparte span{color: #edc14a; font-weight: bolder;}
+
+#botonfinal{height: 170px; background: url(../img/bg-btnfinal.png) no-repeat center center; background-size: contain; margin-top: 40px;}
+#botonfinal .btn{margin: 0 auto;}
+
+
+footer{}
+footer h6{font-size: 18px;}
+footer h6 a:hover{text-decoration: underline;}
+footer h5{font-size: 40px;}
+footer h5 a{margin: 0 10px;}
+footer h5 a:hover{opacity: 0.8;}
+.page-footer { background-color: #011824;}
+
+
+.faq #p1{padding-top: 50px; position: relative; background-size: contain;}
+.faq #p1 h1{font-weight: bolder; color: #edc14a; font-size: 40px; margin-bottom: 60px;}
+.faq #p1 h2{font-weight: normal; font-size: 20px;}
+.faq #p1 p{margin-bottom: 80px; line-height: 150%;}
+.faq #profundidad{height: auto;}
+.home #profundidad{min-height: 3000px; height: auto; padding-bottom: 150px;}
+
+.character-counter{color: #fff; height: 20px;}
+
+#profundidad #etapa2 h2{font-size: 46px; margin-top: 70px;}
+
+#etapa3a{position: relative; z-index: 10; margin-bottom: 40px;}
+#etapa3a h2{font-size: 24px; line-height: 130%;}
+#etapa3a p span{}
+#etapa3a p span.texto{font-size: 16px;}
+#etapa3a p span.puntos{color: #edc14a;font-weight: bold;font-size: 10px; letter-spacing: 1px;}
+
+.etapa3b{position: relative; z-index: 10; margin-bottom: 40px;}
+.etapa3b .votar{ text-align: right;}
+.etapa3b .comparte{ text-align: left;}
+#profundidad .etapa3b p{line-height: 16px;}
+.etapa3b p.share {color: #edc14a; font-weight: bold;}
+.etapa3b p a{color: #fff; font-size: 24px; margin: 0 5px;}
+.etapa3b p a:hover{color: #edc14a;}
+    
+
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+@media only screen and (max-width: 1023px) {
+	#dos-tercios h2 { margin-left: -90px; }
+}
+
+.whatsapp{display: none;}
+
+
+@media only screen and (min-width: 1700px) {
+	#p1{ background: url(../img/bg-profundidad.png?v=2) no-repeat center top;width: 100%; background-size: cover; padding-top: 200px; position: relative; padding-bottom: 200px;}
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+	
+	.etapa3b .votar{ text-align: center;}
+	.etapa3b .comparte{ text-align: center;}
+	body{background-position-y: 350px; background-color: #006BB1;}
+	#logohome{margin-bottom: 0; margin-top:80px;}
+	#redes{ right: 0; left: 0; top: 440px;}
+	#nubes{ top: 10%; z-index: 10;}
+	#home h1{font-size: 30px;}
+	#home p{text-transform: uppercase;  font-size: 13px; letter-spacing: 2px; font-weight: bolder; margin-top: 0;}
+	#home p a{font-size: 30px; color: #fff; display: inline-block; margin: 0 10px;}
+	.baja{  width: 40px; }
+	
+	#profundidad{ height: 4100px; background: #001F2B;}
+	#profundidad h2{font-size: 20px;}
+	#profundidad p { line-height: 240%; letter-spacing: 0px; font-size: 10px; }
+	#porque .row{margin-bottom: 0;}
+	#p1 { padding-top: 100px; }
+	#profundidad p.puntos{font-size: 8px;}
+	#profundidad p.principal{font-size: 12px;}
+	#p2 { margin-top: -30px; }
+	#mancha1 { top: 170px; width: 200%; left: -50%; }
+	#mancha2 { top: 1000px; width: 160%; left: -40%;}	
+	#mancha3 { top: 1800px; width: 150%; left: -30%; }
+	#l3 { top: -151px; left: -40%; }
+	#circulo { top: -30px; left: 10%; width: 80%; margin-left: auto; }
+	#toneladas p span { font-size: 8px; display: block;}
+	#p4 { margin-top: -180px; }
+	#l4 {top: 20px; }
+	#p5 { margin-top: 50px;}
+	#l5a, #l5b{display: none;}
+	#coronaseune h2{margin-bottom: 20px;}
+	#mancha4 { top: 2850px; width: 200%;}
+	#mancha5 { top: 3530px; width: 220%; left: -170px; }
+	#paso0 h2 { font-size: 18px !important; line-height: 140%; margin-bottom: 50px; height: 150px; padding: 52px 0 0 0; margin-top: 0;}
+	#paso1 p { margin-bottom: 40px; font-size: 12px !important; }
+	.whatsapp{display: inline-block;}
+	
+	.btn { padding: 10px 0; width: 100%; }	
+	
+	#profundidad #etapa2 h2 {
+	    font-size: 30px;
+	    margin-top: 50px;
+	}
+	
+}
+
+
+.icon i.circle {
+  font-size: 18px;
+  line-height: 42px;
+  color: #fff;
+  background-color: #999;
+  text-align: center;
+}
+.icon .circle {
+  position: relative;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.icon:hover{opacity: 0.8;}
