@@ -1,4 +1,14 @@
 		    	<div class="container-fluid hide" id="verano" >
+					<div class="dato-verano" id="kmrecorridos">
+						<p>+3200 KM<br><span>recorridos</span></p>
+					</div>
+					<div class="dato-verano" id="kgmaterial">
+						<p>+3200 KG<br><span>de material<br>reciclable</span></p>
+					</div>
+					<div class="dato-verano" id="kgplastico">
+						<p>+3200KM<br><span>de plástico</span></p>
+					</div>
+					
 					<div class="row animated fadeInDown" id="veranoheader">
 						<div class="col s12 center-align">
 							<h2>¡ESTE FUE el recorrido que hicimos<br>LIMPIANDO LAS playas de chile!</h2>	
@@ -11,24 +21,26 @@
 							<p><small><span id="laplaya"></span> <span id="eldia"></span></small></p>
 						</div>
 					</div>
+					
+					
 					<div id="mapa" class="animated slideInLeft">
 						<?php /* Al subir una galería, se debe poner el link y cambiar la clase */ ?>
-						<a href="arica.php" class="mapa-link2" id="arica"></a> 
-						<a href="iquique.php" class="mapa-link2" id="iquique"></a>
-						<a href="antofagasta.php" class="mapa-link2" id="antofagasta"></a>
-						<a href="caldera.php" class="mapa-link2" id="caldera"></a>
-						<a href="la-serena.php" class="mapa-link2" id="la-serena"></a>
-						<a href="bahia-inglesa.php"   class="mapa-link2" id="bahia-inglesa"></a>
-						<a href="totoralillo.php" class="mapa-link2" id="totoralillo"></a>
-						<a href="quintero.php" class="mapa-link2" id="quintero"></a>
-						<a href="concon.php" class="mapa-link2" id="concon"></a>
-						<a href="guanaqueros.php" class="mapa-link2" id="guanaqueros"></a>
-						<a href="maitencillo.php" class="mapa-link2" id="maitencillo"></a>
-						<a href="pichilemu.php" class="mapa-link2" id="pichilemu"></a>
-						<a href="puertecillo.php" class="mapa-link2" id="puertecillo"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="valdivia"></a>
-						<a href="curanipe.php" class="mapa-link2" id="curanipe"></a>
-						<a href="javascript:void(0);" class="mapa-link" id="chiloe"></a>	
+						<a href="arica.php" 			class="mapa-link2" id="arica"></a> 
+						<a href="iquique.php" 			class="mapa-link2" id="iquique"></a>
+						<a href="antofagasta.php" 		class="mapa-link2" id="antofagasta"></a>
+						<a href="caldera.php" 			class="mapa-link2" id="caldera"></a>
+						<a href="la-serena.php" 		class="mapa-link2" id="la-serena"></a>
+						<a href="bahia-inglesa.php"   	class="mapa-link2" id="bahia-inglesa"></a>
+						<a href="totoralillo.php" 		class="mapa-link2" id="totoralillo"></a>
+						<a href="quintero.php" 			class="mapa-link2" id="quintero"></a>
+						<a href="concon.php" 			class="mapa-link2" id="concon"></a>
+						<a href="guanaqueros.php" 		class="mapa-link2" id="guanaqueros"></a>
+						<a href="maitencillo.php" 		class="mapa-link2" id="maitencillo"></a>
+						<a href="pichilemu.php" 		class="mapa-link2" id="pichilemu"></a>
+						<a href="puertecillo.php" 		class="mapa-link2" id="puertecillo"></a>
+						<a href="javascript:void(0);" 	class="mapa-link"  id="valdivia"></a>
+						<a href="curanipe.php" 			class="mapa-link2" id="curanipe"></a>
+						<a href="javascript:void(0);" 	class="mapa-link"  id="chiloe"></a>	
 						
 						<?php /* Acá se van agregando los checks por cada región*/ ?>	
 						<img src="assets/img/check.png" class="responsive-img check" id="check_iquique">
